@@ -1,0 +1,73 @@
+.aboutUs {
+	margin-top: 30px;
+	border-top: 1px solid white;
+	border-radius: 35px 35px 0px 0px;
+	background: #fff;
+
+	.info {
+		margin-top: 100px;
+		margin-bottom: 25px;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.hero {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 45px;
+	}
+
+	.image {
+		background-position: right;
+		background-repeat: no-repeat;
+	}
+
+	#spain {
+		background-image: url('../../../../public/испанский пейзаж.png');
+		width: 610px;
+		height: 684px;
+	}
+
+	#personsGroup {
+		width: 144px;
+		height: 144px;
+		margin-right: 60px;
+		margin-left: 100px;
+		background-image: url('../../../../public/group of persons.png');
+	}
+
+	#dart {
+		width: 144px;
+		height: 144px;
+		margin-right: 60px;
+		margin-left: 100px;
+		background-image: url('../../../../public/dart.png');
+	}
+
+	#hands {
+		width: 144px;
+		height: 144px;
+		margin-right: 60px;
+
+		margin-left: 100px;
+		background-image: url('../../../../public/handshake.png');
+	}
+
+	h2 {
+		color: #0b2c7f;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	p {
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 34px;
+	}
+}

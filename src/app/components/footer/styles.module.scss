@@ -1,0 +1,43 @@
+.footer {
+	padding-top: 100px;
+	color: white;
+	border-top: 1px white solid;
+	background: #04102f;
+
+	p {
+		padding-bottom: 10px;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.24);
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.12px;
+	}
+}
+
+.footerBlock {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+
+	.address {
+		color: #fff;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 136.523%;
+		letter-spacing: 0.2px;
+	}
+
+	.contacts {
+		color: #fff;
+		text-align: left;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 22.5px; /* 112.5% */
+		letter-spacing: -0.2px;
+	}
+}

@@ -1,0 +1,76 @@
+.makeOrder {
+	color: white;
+	border-radius: 35px 35px 0px 0px;
+	background: #04102f;
+
+	h1 {
+		margin-top: 100px;
+		margin-bottom: 90px;
+		color: #fff;
+		text-align: center;
+		font-size: 60px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: 0.6px;
+	}
+}
+
+.orderForm {
+	gap: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	padding-bottom: 90px;
+
+	label {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+
+		p {
+			padding-left: 45px;
+			color: rgba(255, 255, 255, 0.4);
+			font-size: 25px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			letter-spacing: 0.25px;
+			transform: translateY(20px);
+			opacity: 0;
+			transition: ease-in-out 0.3s;
+
+			&.visible {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+	}
+
+	input {
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 45px;
+		padding-right: 45px;
+		color: white;
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: 0.25px;
+		height: 75px;
+		border-radius: 15px;
+		border: 1px solid #fff;
+		background: #071d55;
+		transition: ease-in-out 0.3s;
+
+		&:focus {
+			border: rgba(146, 148, 248, 0.4) 2px solid;
+			box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+		}
+	}
+}

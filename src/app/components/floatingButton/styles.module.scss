@@ -1,0 +1,39 @@
+.floatingButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+	position: fixed;
+	right: 5%;
+	bottom: 40px;
+	color: white;
+	background: #0b2c7f;
+	border: none;
+	border-radius: 100%;
+	width: 72px;
+	height: 72px;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	transition-duration: 0.3s;
+	border: #0b2c7f 3px solid;
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+		border: rgba(146, 148, 248, 0.4) 3px solid;
+		filter: brightness(1.25);
+	}
+
+	&:active {
+		border: rgba(146, 148, 248, 0.4) 3px solid;
+		transform: translateY(-20px);
+		filter: brightness(1.1);
+	}
+
+	.arrow {
+		height: 44px;
+		width: 44px;
+		background-image: url('../../../../public/arrow.png');
+	}
+}

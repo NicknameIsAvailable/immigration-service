@@ -1,0 +1,71 @@
+.hello {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 105vh;
+	background-image: url('../../../../public/axp-photography-l3Dbrq2TrGI-unsplash.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	.buttons {
+		margin-top: 45px;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.phones {
+		display: flex;
+		gap: 10px;
+	}
+
+	header {
+		margin-top: -100px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav {
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: 0.25px;
+		color: white;
+		text-decoration: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.logo {
+		backdrop-filter: blur(1px);
+	}
+
+	.hero {
+		backdrop-filter: blur(1px);
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 70%;
+		color: white;
+
+		h1 {
+			font-size: 80px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+		}
+
+		h3 {
+			font-size: 40px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.service {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 45px;
+	padding-right: 45px;
+	border-radius: 20px;
+	border: 2px solid #d58001;
+	background: #fff;
+
+	h3 {
+		color: #d58001;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	.price {
+		text-align: right;
+	}
+
+	p {
+		color: #000;
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}
