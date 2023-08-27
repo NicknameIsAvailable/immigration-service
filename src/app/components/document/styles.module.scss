@@ -1,0 +1,46 @@
+.bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	opacity: 0;
+	pointer-events: none;
+	filter: blur(10px);
+	transition: ease-in-out 0.3s;
+
+	&.open {
+		pointer-events: all;
+		opacity: 1;
+		filter: blur(0);
+	}
+}
+
+.document {
+	font-size: 20px;
+	padding: 15px;
+	min-width: 360px;
+	width: 1000px;
+	height: 670px;
+	border-radius: 15px;
+	background: #fff;
+	overflow: auto;
+	transform: translateY(50px);
+	transition: ease-in-out 0.3s;
+
+	&.open {
+		transform: translateY(0);
+		pointer-events: all;
+		opacity: 1;
+	}
+
+	p {
+		white-space: pre-wrap;
+	}
+}

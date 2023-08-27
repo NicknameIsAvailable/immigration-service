@@ -61,6 +61,17 @@ const AboutUs = () => {
 					</div>
 					<div className={styles.image} id={styles.hands} />
 				</div>
+				<div className={styles.info}>
+					<div className={styles.hero}>
+						<h2>Мы находимся</h2>
+						<p>
+							по адресу Marbella (Malaga), Calle Ricardo Soriano 31, 1A, но это
+							не мешает нам помогать вам в оформлении визы D в Москве, а также
+							помочь вам подготовиться к собеседованию в Консульстве Испании
+						</p>
+					</div>
+					<div className={styles.image} id={styles.map} />
+				</div>
 			</Container>
 		</div>
 	)

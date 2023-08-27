@@ -190,7 +190,7 @@ const ResidentPermitTypes = () => {
 					<div className={styles.buttons}>
 						{residentPermitTypes.map((item, index) => (
 							<button
-								className={chosenPermit === index ? styles.chosen : {}}
+								className={chosenPermit === index ? styles.chosen : ''}
 								onClick={() => setChosenPermit(index)}
 							>
 								{item.name}
@@ -204,7 +204,7 @@ const ResidentPermitTypes = () => {
 					{residentPermitTypes.map((item, index) => (
 						<div
 							className={`${styles.article} ${
-								index === chosenPermit ? styles.chosen : {}
+								index === chosenPermit ? styles.chosen : ''
 							}`}
 						>
 							{item.description}

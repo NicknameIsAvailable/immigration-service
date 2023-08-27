@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-const Button = ({ children, loading }) => {
+const Button = ({ children, loading }: { children: any; loading: boolean }) => {
 	return (
 		<button className={styles.button} disabled={loading}>
 			<div className={`${styles.loading} ${loading ? styles.visible : {}}`}>

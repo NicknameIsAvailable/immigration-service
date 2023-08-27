@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-const Service = ({ item }) => {
+const Service = ({ item }: { item: any }) => {
 	return (
 		<div className={styles.service}>
 			<h3>{item.title}</h3>

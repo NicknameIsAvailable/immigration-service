@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import AboutUs from './blocks/aboutUs'
 import Feedbacks from './blocks/feedbacks'
 import Hello from './blocks/hello'
@@ -10,16 +11,24 @@ import Footer from './components/footer'
 
 export default function Home() {
 	return (
-		<main>
-			<FloatingButton />
-			<Hello />
-			<AboutUs />
-			<Information />
-			<ResidentPermitTypes />
-			<Prices />
-			<Feedbacks />
-			<MakeOrder />
-			<Footer />
-		</main>
+		<>
+			<Head>
+				<link rel='icon' href='/favicon.ico' sizes='any' />
+				<link rel='icon' href='/favicon.svg' sizes='any' />
+				<link rel='apple-touch-icon' href='/favicon.ico' sizes='any' />
+				<link rel='apple-touch-icon' href='/favicon.svg' sizes='any' />
+			</Head>
+			<main>
+				<FloatingButton />
+				<Hello />
+				<AboutUs />
+				<Information />
+				<ResidentPermitTypes />
+				<Prices />
+				<Feedbacks />
+				<MakeOrder />
+				<Footer />
+			</main>
+		</>
 	)
 }
