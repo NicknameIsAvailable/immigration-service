@@ -7,9 +7,11 @@ const Footer = () => {
 			<Container>
 				<div className={styles.footerBlock}>
 					<div className={styles.address}>
-						<h4>29660</h4>
-						<h4>Marbella (Malaga)</h4>
-						<h4>Calle Ricardo Soriano 31, 1A</h4>
+						<a href='https://goo.gl/maps/8QNquer8R8RAX7tY8' target='_blank'>
+							<h4>29660</h4>
+							<h4>Marbella (Malaga)</h4>
+							<h4>Calle Ricardo Soriano 31, 1A</h4>
+						</a>
 					</div>
 					<div className={styles.contacts}>
 						<div style={{ display: 'flex', gap: 20 }}>
@@ -56,6 +58,7 @@ const Footer = () => {
 								viewBox='0 0 28 28'
 								fill='none'
 								xmlns='http://www.w3.org/2000/svg'
+								className={styles.telegramIcon}
 							>
 								<g clip-path='url(#clip0_216_28)'>
 									<path
@@ -65,7 +68,7 @@ const Footer = () => {
 								</g>
 								<defs>
 									<clipPath id='clip0_216_28'>
-										<rect width='28' height='28' fill='white' />
+										<rect width='40' height='40' fill='white' />
 									</clipPath>
 								</defs>
 							</svg>

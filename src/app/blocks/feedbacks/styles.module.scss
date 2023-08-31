@@ -3,11 +3,45 @@
 	position: relative;
 	color: white;
 	width: 100vw;
+	height: 1100px;
 	background: #d58001;
 
-	.feedbacksList {
-		display: flex;
-		gap: 20px;
+	.allFeedbacks {
+		position: relative;
+
+		.feedbacksList {
+			transition: 0.3s ease-in-out;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			gap: 20px;
+			opacity: 0;
+			pointer-events: none;
+			filter: blur(10px);
+		}
+
+		#first {
+			transform: translateX(-100px);
+
+			&.open {
+				pointer-events: all;
+				opacity: 1;
+				transform: translateX(0);
+				filter: blur(0);
+			}
+		}
+
+		#second {
+			transform: translateX(100px);
+
+			&.open {
+				pointer-events: all;
+				opacity: 1;
+				transform: translateX(0);
+				filter: blur(0);
+			}
+		}
 	}
 
 	.arrowBtn {

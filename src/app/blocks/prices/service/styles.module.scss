@@ -9,6 +9,23 @@
 	border-radius: 20px;
 	border: 2px solid #d58001;
 	background: #fff;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+		background: #d58001;
+		h3 {
+			color: white;
+		}
+
+		p {
+			color: white;
+		}
+	}
+
+	&:active {
+		transform: scale(1.01);
+	}
 
 	h3 {
 		color: #d58001;

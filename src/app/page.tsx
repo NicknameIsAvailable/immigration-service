@@ -8,6 +8,7 @@ import Prices from './blocks/prices'
 import ResidentPermitTypes from './blocks/residentPermitTypes'
 import FloatingButton from './components/floatingButton'
 import Footer from './components/footer'
+import Header from './components/header'
 
 export default function Home() {
 	return (
@@ -21,6 +22,7 @@ export default function Home() {
 			<main>
 				<FloatingButton />
 				<Hello />
+				<Header />
 				<AboutUs />
 				<Information />
 				<ResidentPermitTypes />

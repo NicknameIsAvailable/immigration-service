@@ -68,6 +68,23 @@
 		background: #071d55;
 		transition: ease-in-out 0.3s;
 
+		::-webkit-input-placeholder {
+			/* WebKit browsers */
+			color: rgba(255, 255, 255, 0.4);
+		}
+		:-moz-placeholder {
+			/* Mozilla Firefox 4 to 18 */
+			color: rgba(255, 255, 255, 0.4);
+		}
+		::-moz-placeholder {
+			/* Mozilla Firefox 19+ */
+			color: rgba(255, 255, 255, 0.4);
+		}
+		:-ms-input-placeholder {
+			/* Internet Explorer 10+ */
+			color: rgba(255, 255, 255, 0.4);
+		}
+
 		&:focus {
 			border: rgba(146, 148, 248, 0.4) 2px solid;
 			box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);

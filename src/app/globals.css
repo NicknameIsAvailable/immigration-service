@@ -8,8 +8,15 @@ html {
 }
 
 a {
-	text-decoration: none;
 	color: white;
+	box-sizing: border-box;
+	position: relative;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	border: transparent 2px solid;
+}
+
+a:hover {
 }
 
 body {

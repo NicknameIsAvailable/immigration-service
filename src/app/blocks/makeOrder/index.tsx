@@ -60,7 +60,7 @@ const MakeOrder = () => {
 							</p>
 							<input
 								type='e-mail'
-								placeholder='e-mail'
+								placeholder='E-mail'
 								required
 								onChange={e =>
 									setFormParams({ ...formParams, email: e.target.value })
