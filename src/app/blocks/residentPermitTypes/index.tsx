@@ -1,11 +1,24 @@
 'use client'
 
 import Container from '@/app/components/container'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 
 const ResidentPermitTypes = () => {
 	const [chosenPermit, setChosenPermit] = useState(0)
+ 
+	const [offset, setOffset] = useState(0)
+
+	const handleScroll = () => {
+		setOffset(window.pageYOffset)
+	}
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll)
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
+	}, [])
 
 	interface ResidentPermitType {
 		name: string
@@ -73,7 +86,7 @@ const ResidentPermitTypes = () => {
 			name: 'Виза инфестора (Золотая виза)',
 			description: (
 				<>
-					<p>
+					<p className='other'>
 						Дает зарубежному инвестору право на&nbsp;двухлетний ВНЖ, который
 						можно продлить еще на&nbsp;5&nbsp;лет. Впоследствии иностранец имеет
 						возможность получить ПМЖ и&nbsp;оформить гражданство Испании.
@@ -118,7 +131,7 @@ const ResidentPermitTypes = () => {
 			name: 'ВНЖ по студенческой визе',
 			description: (
 				<>
-					<p>
+					<p className='other'>
 						Разрешение на&nbsp;проживание в&nbsp;Испании более 90&nbsp;дней для
 						иностранцев, которые планируют обучение в&nbsp;вузах либо
 						на&nbsp;языковых курсах в&nbsp;этой стране. Мы&nbsp;Вам поможем
@@ -150,7 +163,7 @@ const ResidentPermitTypes = () => {
 			name: 'ВНЖ цифровой кочевник',
 			description: (
 				<>
-					<p>
+					<p className='other'>
 						ВНЖ цифрового кочевника в&nbsp;Испании для удаленных работников
 						оформляется в&nbsp;Испании. Документы подаются электронно без
 						присутствия заявителя. Обязательное условие: на&nbsp;момент подачи
@@ -191,6 +204,12 @@ const ResidentPermitTypes = () => {
 
 	return (
 		<section className={styles.residentPermitTypes}>
+			<div className={styles.background} 
+			// style={{
+			// 		transform: `translateY(${offset * 0.3}px)`,
+			// 	}}
+				/>
+
 			<Container>
 				<div className={styles.residentPermitTypes__block}>
 					<div className={styles.buttons}>
@@ -207,9 +226,14 @@ const ResidentPermitTypes = () => {
 			</Container>
 			<div className={styles.description}>
 				<Container>
+					<div
+						className={styles.article}
+					>
+							{residentPermitTypes[0].description}
+					</div>
 					{residentPermitTypes.map((item, index) => (
 						<div
-							className={`${styles.article} ${
+							className={`${styles.article} ${styles.other} ${
 								index === chosenPermit ? styles.chosen : ''
 							}`}
 						>
@@ -218,7 +242,6 @@ const ResidentPermitTypes = () => {
 					))}
 				</Container>
 			</div>
-
 			<div className={styles.nextSection} />
 		</section>
 	)

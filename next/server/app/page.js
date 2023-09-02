@@ -373,34 +373,34 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 5438:
+/***/ 7083:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6505, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6505, 23))
 
 /***/ }),
 
-/***/ 2104:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4759));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9653));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 188));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 954, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6230));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1719))
-
-/***/ }),
-
-/***/ 7283:
+/***/ 1360:
 /***/ (() => {
 
 
+
+/***/ }),
+
+/***/ 4229:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1719));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 954, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 188));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4759));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9653));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6230))
 
 /***/ }),
 
@@ -530,7 +530,6 @@ const Feedbacks = ()=>{
             })
         }
     ];
-    const [startIndex, setStartIndex] = (0,react_.useState)(0);
     const [firstVisible, setFirstVisible] = (0,react_.useState)(true);
     const [secondVisible, setSecondVisible] = (0,react_.useState)(false);
     const handleClickNext = ()=>{
@@ -984,10 +983,6 @@ const Hello = ()=>{
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: (styles_module_default()).helloBlock,
-                style: {
-                    transform: `translateY(${offset * 0.3}px)`,
-                    opacity: offset > 600 ? 1 - offset / 1000 : 1
-                },
                 children: /*#__PURE__*/ jsx_runtime_.jsx(container/* default */.Z, {
                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (styles_module_default()).helloContainer,
@@ -1080,6 +1075,7 @@ const Hello = ()=>{
                                         })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                        className: (styles_module_default()).address,
                                         children: [
                                             "29660, Marbella (Malaga), Calle Ricardo Soriano 31, 1A",
                                             " ",
@@ -1097,7 +1093,7 @@ const Hello = ()=>{
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: (styles_module_default()).helloBG,
                 style: {
-                    transform: `translateY(${offset * 0.5}px)`,
+                    transform: `translateY(${offset * 0.3}px)`,
                     zIndex: -1
                 }
             })
@@ -1369,6 +1365,17 @@ __webpack_require__.r(__webpack_exports__);
 
 const ResidentPermitTypes = ()=>{
     const [chosenPermit, setChosenPermit] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0);
+    const [offset, setOffset] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0);
+    console.log(offset);
+    const handleScroll = ()=>{
+        setOffset(window.pageYOffset);
+    };
+    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
+        window.addEventListener("scroll", handleScroll);
+        return ()=>{
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     const residentPermitTypes = [
         {
             name: "ВНЖ для финансово независимых лиц",
@@ -1419,6 +1426,7 @@ const ResidentPermitTypes = ()=>{
             name: "Виза инфестора (Золотая виза)",
             description: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                    className: "other",
                     children: [
                         "Дает зарубежному инвестору право на\xa0двухлетний ВНЖ, который можно продлить еще на\xa05\xa0лет. Впоследствии иностранец имеет возможность получить ПМЖ и\xa0оформить гражданство Испании.",
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
@@ -1464,6 +1472,7 @@ const ResidentPermitTypes = ()=>{
             name: "ВНЖ по студенческой визе",
             description: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                    className: "other",
                     children: [
                         "Разрешение на\xa0проживание в\xa0Испании более 90\xa0дней для иностранцев, которые планируют обучение в\xa0вузах либо на\xa0языковых курсах в\xa0этой стране. Мы\xa0Вам поможем правильно подобрать программу языковых курсов, получить студенческую визу и\xa0оформить на\xa0ее\xa0основании ВНЖ. Срок оформления документа занимает от\xa02\xa0до\xa04\xa0месяцев.",
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
@@ -1488,6 +1497,7 @@ const ResidentPermitTypes = ()=>{
             name: "ВНЖ цифровой кочевник",
             description: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                    className: "other",
                     children: [
                         "ВНЖ цифрового кочевника в\xa0Испании для удаленных работников оформляется в\xa0Испании. Документы подаются электронно без присутствия заявителя. Обязательное условие: на\xa0момент подачи документов Заявитель должен находиться на\xa0территории Испании.При положительном решении ВНЖ цифрового кочевника выдается на\xa03\xa0года.",
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
@@ -1518,6 +1528,9 @@ const ResidentPermitTypes = ()=>{
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
         className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().residentPermitTypes),
         children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().background)
+            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_components_container__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().residentPermitTypes__block),
@@ -1533,11 +1546,17 @@ const ResidentPermitTypes = ()=>{
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().description),
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_components_container__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
-                    children: residentPermitTypes.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: `${(_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().article)} ${index === chosenPermit ? (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().chosen) : ""}`,
-                            children: item.description
-                        }))
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_app_components_container__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().article),
+                            children: residentPermitTypes[0].description
+                        }),
+                        residentPermitTypes.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: `${(_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().article)} ${(_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().other)} ${index === chosenPermit ? (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().chosen) : ""}`,
+                                children: item.description
+                            }))
+                    ]
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -1569,13 +1588,15 @@ const Button = ({ children, loading })=>{
         className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default().button),
         disabled: loading,
         children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                children: children
+            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: `${(_styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default().loading)} ${loading ? (_styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default().visible) : {}}`,
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default().ringLoader)
                 })
-            }),
-            children
+            })
         ]
     });
 };
@@ -1734,6 +1755,7 @@ module.exports = {
 	"bgLoading": "styles_bgLoading__G7mau",
 	"buttons": "styles_buttons__aXKda",
 	"buttonsLoading": "styles_buttonsLoading__OPMyS",
+	"address": "styles_address__9yPRA",
 	"locationIcon": "styles_locationIcon__QPkNj",
 	"phones": "styles_phones__qi3uK",
 	"headerLoading": "styles_headerLoading__Qhepc",
@@ -1808,11 +1830,13 @@ module.exports = {
 // Exports
 module.exports = {
 	"residentPermitTypes": "styles_residentPermitTypes__1QSwD",
+	"background": "styles_background__a3DEI",
 	"residentPermitTypes__block": "styles_residentPermitTypes__block__Eeefc",
 	"buttons": "styles_buttons__oYxq8",
 	"chosen": "styles_chosen__C7ZUd",
 	"description": "styles_description__Obuxz",
 	"article": "styles_article__k_S78",
+	"other": "styles_other__g37UO",
 	"nextSection": "styles_nextSection__5dtWg"
 };
 
@@ -2191,16 +2215,22 @@ const Information = ()=>{
                                     target: "_blank",
                                     children: [
                                         " ",
-                                        "\xabО\xa0правах и\xa0свободах иностранцев и\xa0их\xa0социальной интеграции\xbb"
+                                        "\xabО\xa0правах и\xa0свободах иностранцев",
+                                        " ",
+                                        "и\xa0их\xa0социальной интеграции\xbb"
                                     ]
                                 }),
+                                " ",
                                 "и",
+                                " ",
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                                     className: (information_styles_module_default()).a,
                                     href: "https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074",
                                     children: [
                                         " ",
-                                        "\xabО\xa0поддержке предпринимателей и\xa0их\xa0интернационализации\xbb"
+                                        "\xabО\xa0поддержке предпринимателей",
+                                        " ",
+                                        "и\xa0их\xa0интернационализации\xbb"
                                     ]
                                 }),
                                 ". Иностранцам для пересечения границы и\xa0последующего оформления ВНЖ необходимо получить национальную визу категории D.\xa0Законодательством предусмотрены несколько механизмов интеграции мигрантов в социально-экономическую жизнь страны, которые далее в\xa0статье рассмотрены более подробно."
@@ -2463,23 +2493,19 @@ const Footer = ()=>{
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: (footer_styles_module_default()).footerBlock,
                     children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: (footer_styles_module_default()).address,
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                                href: "https://goo.gl/maps/8QNquer8R8RAX7tY8",
-                                target: "_blank",
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("h4", {
-                                        children: "29660"
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("h4", {
-                                        children: "Marbella (Malaga)"
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("h4", {
-                                        children: "Calle Ricardo Soriano 31, 1A"
-                                    })
-                                ]
-                            })
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                    children: "29660"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                    children: "Marbella (Malaga)"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                    children: "Calle Ricardo Soriano 31, 1A"
+                                })
+                            ]
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: (footer_styles_module_default()).contacts,
@@ -2542,8 +2568,8 @@ const Footer = ()=>{
                                 href: "https://t.me/ImmigrationServiceEs",
                                 target: "_blank",
                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("svg", {
-                                    width: "28",
-                                    height: "28",
+                                    width: "48",
+                                    height: "48",
                                     viewBox: "0 0 28 28",
                                     fill: "none",
                                     xmlns: "http://www.w3.org/2000/svg",
@@ -2560,8 +2586,8 @@ const Footer = ()=>{
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("clipPath", {
                                                 id: "clip0_216_28",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("rect", {
-                                                    width: "40",
-                                                    height: "40",
+                                                    width: "128",
+                                                    height: "128",
                                                     fill: "white"
                                                 })
                                             })

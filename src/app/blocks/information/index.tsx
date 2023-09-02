@@ -28,17 +28,26 @@ const Information = () => {
 						>
 							{' '}
 							&laquo;О&nbsp;правах и&nbsp;свободах иностранцев
-							и&nbsp;их&nbsp;социальной интеграции&raquo;
+							{' '}и&nbsp;их&nbsp;социальной интеграции&raquo; 
 						</a>
-						и
+						{' '}
+							и
+						{' '}
 						<a
 							className={styles.a}
 							href='https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074'
 						>
 							{' '}
 							&laquo;О&nbsp;поддержке предпринимателей
-							и&nbsp;их&nbsp;интернационализации&raquo;
 						</a>
+
+						<a
+							className={styles.a}
+							href='https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074'
+						>
+					   и&nbsp;их&nbsp;интернационализации&raquo;
+						</a>
+
 						. Иностранцам для пересечения границы и&nbsp;последующего оформления
 						ВНЖ необходимо получить национальную визу категории
 						D.&nbsp;Законодательством предусмотрены несколько механизмов

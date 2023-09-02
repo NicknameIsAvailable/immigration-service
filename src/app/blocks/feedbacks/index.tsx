@@ -96,7 +96,6 @@ const Feedbacks = () => {
 		},
 	]
 
-	const [startIndex, setStartIndex] = useState(0)
 	const [firstVisible, setFirstVisible] = useState(true)
 	const [secondVisible, setSecondVisible] = useState(false)
 

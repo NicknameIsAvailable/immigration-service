@@ -6,13 +6,13 @@ const Footer = () => {
 		<footer className={styles.footer}>
 			<Container>
 				<div className={styles.footerBlock}>
-					<div className={styles.address}>
-						<a href='https://goo.gl/maps/8QNquer8R8RAX7tY8' target='_blank'>
-							<h4>29660</h4>
-							<h4>Marbella (Malaga)</h4>
-							<h4>Calle Ricardo Soriano 31, 1A</h4>
-						</a>
+
+						<div className={styles.address}>
+							<p className={styles.link}>29660</p>
+							<p className={styles.link}>Marbella (Malaga)</p>
+							<p className={styles.link}>Calle Ricardo Soriano 31, 1A</p>
 					</div>
+
 					<div className={styles.contacts}>
 						<div style={{ display: 'flex', gap: 20 }}>
 							<svg
@@ -28,7 +28,7 @@ const Footer = () => {
 								/>
 							</svg>
 							<a href='mailto:immigrationservice.spain@gmail.com'>
-								<h4>immigrationservice.spain@gmail.com</h4>
+								<p className={styles.link}>immigrationservice.spain@gmail.com</p>
 							</a>
 						</div>
 
@@ -46,15 +46,15 @@ const Footer = () => {
 								/>
 							</svg>
 
-							<h4>+34 685 54 27 31</h4>
-							<h4>+34 633 51 02 26</h4>
+							<p className={styles.link}>+34 685 54 27 31</p>
+							<p className={styles.link}>+34 633 51 02 26</p>
 						</div>
 					</div>
 					<div className={styles.telegram}>
 						<a href='https://t.me/ImmigrationServiceEs' target='_blank'>
 							<svg
-								width='28'
-								height='28'
+								width='48'
+								height='48'
 								viewBox='0 0 28 28'
 								fill='none'
 								xmlns='http://www.w3.org/2000/svg'
@@ -68,7 +68,7 @@ const Footer = () => {
 								</g>
 								<defs>
 									<clipPath id='clip0_216_28'>
-										<rect width='40' height='40' fill='white' />
+										<rect width='128' height='128' fill='white' />
 									</clipPath>
 								</defs>
 							</svg>

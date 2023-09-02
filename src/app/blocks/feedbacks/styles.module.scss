@@ -1,20 +1,19 @@
 .feedbacks {
-	padding-top: 5px;
 	position: relative;
+	padding-top: 5px;
+	padding-bottom: 40px;
 	color: white;
 	width: 100vw;
-	height: 1100px;
 	background: #d58001;
 
 	.allFeedbacks {
+		width: 100%;
 		position: relative;
 
 		.feedbacksList {
 			transition: 0.3s ease-in-out;
-			position: absolute;
-			top: 0;
-			left: 0;
 			display: flex;
+			justify-content: center;
 			gap: 20px;
 			opacity: 0;
 			pointer-events: none;
@@ -33,7 +32,12 @@
 		}
 
 		#second {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
 			transform: translateX(100px);
+			position: absolute;
+			top: 0; 
 
 			&.open {
 				pointer-events: all;

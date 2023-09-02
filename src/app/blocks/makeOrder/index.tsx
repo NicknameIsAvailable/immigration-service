@@ -30,14 +30,13 @@ const MakeOrder = () => {
 		try {
 			setLoading(true)
 			const data = await axios.post(
-				`http://95.163.241.37:8080/api/get-in-touch`,
+				`https://immigration-service.es/api/get-in-touch`,
 				formParams
 			)
 			setIsSended(true)
 			setLoading(false)
 		} catch (error) {
 			setLoading(false)
-			console.log(error)
 		}
 	}
 
