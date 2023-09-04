@@ -22,6 +22,7 @@ export default function RootLayout({
 				<link rel='icon' href='/favicon.svg' sizes='any' />
 				<link rel='apple-touch-icon' href='/favicon.ico' sizes='any' />
 				<link rel='apple-touch-icon' href='/favicon.svg' sizes='any' />
+				<meta name='yandex-verification' content='0c579cef73d75c27' />
 			</head>
 			<body className={inter.className}>{children}</body>
 		</html>

@@ -86,6 +86,10 @@
 }
 
 @media (max-width: 430px) {
+	#first {
+		margin-top: 120px;
+	}
+
 	.info {
 		margin-bottom: 20px;
 		display: flex;
@@ -104,15 +108,55 @@
 			font-size: 20px;
 		}
 
-		p { 
+		p {
 			padding: 0 15px;
 			margin-top: -30px;
 			font-size: 15px;
 			line-height: 20px; /* 133.333% */
+			.image {
+				right: 0;
+				margin-right: 0;
+				margin-left: 0;
+				float: right;
+			}
+
+			#personsGroup {
+				width: 144px;
+				height: 144px;
+				margin-right: 0;
+				margin-left: 0;
+				background-image: url('../../../../public/group of persons.png');
+			}
+
+			#dart {
+				width: 144px;
+				height: 144px;
+				margin-right: 0;
+				margin-left: 0;
+				background-image: url('../../../../public/dart.png');
+			}
+
+			#hands {
+				width: 144px;
+				height: 144px;
+				margin-right: 0;
+				margin-left: 0;
+				background-image: url('../../../../public/handshake.png');
+			}
+
+			#map {
+				width: 144px;
+				height: 144px;
+				margin-right: 0;
+				margin-left: 0;
+				background-image: url('../../../../public/map.png');
+			}
 		}
-		
-		.icon {
-			
+
+		.spell {
+			.hero {
+				display: block;
+			}
 		}
 	}
 }

@@ -1,16 +1,15 @@
 import Container from '../container'
 import styles from './styles.module.scss'
 
-const Footer = () => {
+const Footer = ({ width }: { width: number | undefined }) => {
 	return (
 		<footer className={styles.footer}>
 			<Container>
 				<div className={styles.footerBlock}>
-
-						<div className={styles.address}>
-							<p className={styles.link}>29660</p>
-							<p className={styles.link}>Marbella (Malaga)</p>
-							<p className={styles.link}>Calle Ricardo Soriano 31, 1A</p>
+					<div className={styles.address}>
+						<p className={styles.link}>29660</p>
+						<p className={styles.link}>Marbella (Malaga)</p>
+						<p className={styles.link}>Calle Ricardo Soriano 31, 1A</p>
 					</div>
 
 					<div className={styles.contacts}>
@@ -28,7 +27,9 @@ const Footer = () => {
 								/>
 							</svg>
 							<a href='mailto:immigrationservice.spain@gmail.com'>
-								<p className={styles.link}>immigrationservice.spain@gmail.com</p>
+								<p className={styles.link}>
+									immigrationservice.spain@gmail.com
+								</p>
 							</a>
 						</div>
 

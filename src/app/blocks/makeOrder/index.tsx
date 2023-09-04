@@ -52,7 +52,7 @@ const MakeOrder = () => {
 							sendForm()
 						}}
 					>
-						<h1>Заказать услугу по оформлению ВНЖ</h1>
+						<h1>Заказать услугу по&nbsp;оформлению ВНЖ</h1>
 						<label htmlFor='eMail'>
 							<p className={formParams.email.length > 0 ? styles.visible : ''}>
 								e-mail

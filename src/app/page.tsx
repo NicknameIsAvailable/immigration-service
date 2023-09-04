@@ -14,17 +14,21 @@ import Footer from './components/footer'
 import Header from './components/header'
 
 export default function Home() {
-	const [width, setWidth] = useState(window.innerWidth);
+	const [width, setWidth] = useState<number | undefined>()
 
-  useEffect(() => {
-    const handleResize = (event: any) => {
-      setWidth(event.target.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+	useEffect(() => {
+		if (typeof window !== 'undefined') setWidth(window.innerWidth)
+	}, [])
+
+	useEffect(() => {
+		const handleResize = (event: any) => {
+			setWidth(event.target.innerWidth)
+		}
+		window.addEventListener('resize', handleResize)
+		return () => {
+			window.removeEventListener('resize', handleResize)
+		}
+	}, [])
 
 	return (
 		<>
@@ -38,13 +42,13 @@ export default function Home() {
 				<FloatingButton />
 				<Hello />
 				<Header />
-				<AboutUs width={width}/>
+				<AboutUs width={width} />
 				<Information />
 				<ResidentPermitTypes />
 				<Prices />
 				<Feedbacks />
 				<MakeOrder />
-				<Footer />
+				<Footer width={width} />
 			</main>
 		</>
 	)

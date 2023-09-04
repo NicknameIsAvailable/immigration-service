@@ -318,7 +318,7 @@ const tree = {
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3575)), "/home/yaroslav/projects/immigration-service/src/app/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8159)), "/home/yaroslav/projects/immigration-service/src/app/page.tsx"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3881))).default(props))],
     apple: [],
@@ -373,38 +373,33 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 7208:
+/***/ 7083:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6505, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6505, 23))
 
 /***/ }),
 
-/***/ 4433:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 188));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9653));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6230));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 954, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4759));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1719))
-
-/***/ }),
-
-/***/ 7283:
+/***/ 1360:
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ 9653:
+/***/ 4437:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6196))
+
+/***/ }),
+
+/***/ 6196:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -413,15 +408,263 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ feedbacks)
+  "default": () => (/* binding */ Home)
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(6786);
-// EXTERNAL MODULE: ./src/app/components/container/index.tsx
-var container = __webpack_require__(2532);
+// EXTERNAL MODULE: ./node_modules/next/dist/client/components/noop-head.js
+var noop_head = __webpack_require__(9081);
+var noop_head_default = /*#__PURE__*/__webpack_require__.n(noop_head);
 // EXTERNAL MODULE: external "next/dist/compiled/react"
 var react_ = __webpack_require__(8038);
+// EXTERNAL MODULE: ./src/app/components/container/styles.module.scss
+var styles_module = __webpack_require__(3646);
+var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
+;// CONCATENATED MODULE: ./src/app/components/container/index.tsx
+
+
+const Container = ({ children })=>{
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        className: (styles_module_default()).container,
+        children: children
+    });
+};
+/* harmony default export */ const container = (Container);
+
+// EXTERNAL MODULE: ./src/app/blocks/aboutUs/styles.module.scss
+var aboutUs_styles_module = __webpack_require__(8383);
+var aboutUs_styles_module_default = /*#__PURE__*/__webpack_require__.n(aboutUs_styles_module);
+;// CONCATENATED MODULE: ./src/app/blocks/aboutUs/index.tsx
+
+
+
+const AboutUs = ({ width })=>{
+    return width && width <= 430 ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        className: (aboutUs_styles_module_default()).aboutUs,
+        id: "about-us",
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(container, {
+            children: [
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: (aboutUs_styles_module_default()).info,
+                    id: (aboutUs_styles_module_default()).first,
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (aboutUs_styles_module_default()).hero,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: "О нас"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (aboutUs_styles_module_default()).image,
+                                id: (aboutUs_styles_module_default()).spain
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                children: [
+                                    "Мы\xa0— компания, которая помогает русскоязычным гражданам оформить ВНЖ (вид на\xa0жительство) в\xa0Испании. Мы\xa0осознаем, как важно иметь квалифицированных специалистов рядом с\xa0собой в\xa0этом процессе, поэтому мы\xa0гордимся тем, что работаем в\xa0тесном сотрудничестве с испанскими адвокатами и\xa0юристами. ",
+                                    /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                    "Наша команда состоит из\xa0опытных профессионалов, которые готовы предоставить вам индивидуальный подход и\xa0решить все вопросы, связанные с\xa0получением резиденции в\xa0Испании. Мы\xa0оказываем поддержку нашим клиентам на\xa0каждом этапе оформления ВНЖ, начиная от\xa0сбора необходимых документов, заканчивая отправкой их\xa0на рассмотрение властям."
+                                ]
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: `${(aboutUs_styles_module_default()).info} ${(aboutUs_styles_module_default()).spell}`,
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (aboutUs_styles_module_default()).hero,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: "Мы понимаем"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(aboutUs_styles_module_default()).image} ${(aboutUs_styles_module_default()).icon}`,
+                                        id: (aboutUs_styles_module_default()).personsGroup
+                                    }),
+                                    "что процесс получения ВНЖ может быть сложным и\xa0запутанным, особенно для тех, кто не\xa0говорит на\xa0испанском языке или не\xa0знаком с\xa0местными законодательными процедурами. Поэтому мы\xa0делаем все возможное, чтобы помочь нашим клиентам преодолеть любые трудности и\xa0сделать этот процесс максимально простым и\xa0удобным для них."
+                                ]
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: `${(aboutUs_styles_module_default()).info} ${(aboutUs_styles_module_default()).spell}`,
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (aboutUs_styles_module_default()).hero,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: "Наша цель"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(aboutUs_styles_module_default()).image} ${(aboutUs_styles_module_default()).icon}`,
+                                        id: (aboutUs_styles_module_default()).dart
+                                    }),
+                                    "обеспечить нашим клиентам легальный и\xa0безопасный путь к\xa0обретению резиденции в\xa0Испании. Мы\xa0гарантируем конфиденциальность информации, внимательное отношение к\xa0каждому клиенту и оперативность в\xa0решении всех возникающих вопросов."
+                                ]
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: `${(aboutUs_styles_module_default()).info} ${(aboutUs_styles_module_default()).spell}`,
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (aboutUs_styles_module_default()).hero,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: "Помощь и поддержка"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(aboutUs_styles_module_default()).image} ${(aboutUs_styles_module_default()).icon}`,
+                                        id: (aboutUs_styles_module_default()).hands
+                                    }),
+                                    "это то\xa0что готова предоставить наша компания если вы\xa0хотите получить ВНЖ в\xa0Испании. Обращайтесь к\xa0нам, и\xa0мы\xa0сделаем все возможное, чтобы ваше оформление резиденции прошло успешно и\xa0без лишних затруднений."
+                                ]
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: `${(aboutUs_styles_module_default()).info} ${(aboutUs_styles_module_default()).spell}`,
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (aboutUs_styles_module_default()).hero,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: "Мы находимся"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(aboutUs_styles_module_default()).image} ${(aboutUs_styles_module_default()).icon}`,
+                                        id: (aboutUs_styles_module_default()).map
+                                    }),
+                                    "по\xa0адресу Marbella (Malaga), Calle Ricardo Soriano\xa031, 1A, но\xa0это не\xa0мешает нам помогать вам в\xa0оформлении визы D\xa0в Москве, а\xa0также помочь вам подготовиться к\xa0собеседованию в\xa0Консульстве Испании"
+                                ]
+                            })
+                        ]
+                    })
+                })
+            ]
+        })
+    }) : /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        className: (aboutUs_styles_module_default()).aboutUs,
+        id: "about-us",
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(container, {
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (aboutUs_styles_module_default()).info,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (aboutUs_styles_module_default()).hero,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                    children: "О нас"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                    children: [
+                                        "Мы\xa0— компания, которая помогает русскоязычным гражданам оформить ВНЖ (вид на\xa0жительство) в\xa0Испании. Мы\xa0осознаем, как важно иметь квалифицированных специалистов рядом с\xa0собой в\xa0этом процессе, поэтому мы\xa0гордимся тем, что работаем в\xa0тесном сотрудничестве с испанскими адвокатами и\xa0юристами. ",
+                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                        "Наша команда состоит из\xa0опытных профессионалов, которые готовы предоставить вам индивидуальный подход и\xa0решить все вопросы, связанные с\xa0получением резиденции в\xa0Испании. Мы\xa0оказываем поддержку нашим клиентам на\xa0каждом этапе оформления ВНЖ, начиная от\xa0сбора необходимых документов, заканчивая отправкой их\xa0на рассмотрение властям."
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (aboutUs_styles_module_default()).image,
+                            id: (aboutUs_styles_module_default()).spain
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (aboutUs_styles_module_default()).info,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (aboutUs_styles_module_default()).hero,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                    children: "Мы понимаем"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    children: "что процесс получения ВНЖ может быть сложным и\xa0запутанным, особенно для тех, кто не\xa0говорит на\xa0испанском языке или не\xa0знаком с\xa0местными законодательными процедурами. Поэтому мы\xa0делаем все возможное, чтобы помочь нашим клиентам преодолеть любые трудности и\xa0сделать этот процесс максимально простым и\xa0удобным для них."
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (aboutUs_styles_module_default()).image,
+                            id: (aboutUs_styles_module_default()).personsGroup
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (aboutUs_styles_module_default()).info,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (aboutUs_styles_module_default()).hero,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                    children: "Наша цель"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    children: "обеспечить нашим клиентам легальный и\xa0безопасный путь к\xa0обретению резиденции в\xa0Испании. Мы\xa0гарантируем конфиденциальность информации, внимательное отношение к\xa0каждому клиенту и оперативность в\xa0решении всех возникающих вопросов."
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (aboutUs_styles_module_default()).image,
+                            id: (aboutUs_styles_module_default()).dart
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (aboutUs_styles_module_default()).info,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (aboutUs_styles_module_default()).hero,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                    children: "Помощь и поддержка"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    children: "это то\xa0что готова предоставить наша компания если вы\xa0хотите получить ВНЖ в\xa0Испании. Обращайтесь к\xa0нам, и\xa0мы\xa0сделаем все возможное, чтобы ваше оформление резиденции прошло успешно и\xa0без лишних затруднений."
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (aboutUs_styles_module_default()).image,
+                            id: (aboutUs_styles_module_default()).hands
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (aboutUs_styles_module_default()).info,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (aboutUs_styles_module_default()).hero,
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                    children: "Мы находимся"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    children: "по\xa0адресу Marbella (Malaga), Calle Ricardo Soriano\xa031, 1A, но\xa0это не\xa0мешает нам помогать вам в\xa0оформлении визы D\xa0в Москве, а\xa0также помочь вам подготовиться к\xa0собеседованию в\xa0Консульстве Испании"
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (aboutUs_styles_module_default()).image,
+                            id: (aboutUs_styles_module_default()).map
+                        })
+                    ]
+                })
+            ]
+        })
+    });
+};
+/* harmony default export */ const aboutUs = (AboutUs);
+
 ;// CONCATENATED MODULE: ./public/icons/arrowLeft.tsx
 
 const ArrowLeftIcon = ()=>{
@@ -457,20 +700,20 @@ const ArrowRightIcon = ()=>{
 /* harmony default export */ const arrowRight = (ArrowRightIcon);
 
 // EXTERNAL MODULE: ./src/app/blocks/feedbacks/components/feedback/styles.module.scss
-var styles_module = __webpack_require__(9127);
-var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
+var feedback_styles_module = __webpack_require__(9127);
+var feedback_styles_module_default = /*#__PURE__*/__webpack_require__.n(feedback_styles_module);
 ;// CONCATENATED MODULE: ./src/app/blocks/feedbacks/components/feedback/index.tsx
 
 
 const Feedback = ({ item })=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: (styles_module_default()).feedback,
+        className: (feedback_styles_module_default()).feedback,
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: (styles_module_default()).badge,
+                className: (feedback_styles_module_default()).badge,
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: (styles_module_default()).avatar
+                        className: (feedback_styles_module_default()).avatar
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                         children: "Аноним"
@@ -478,7 +721,7 @@ const Feedback = ({ item })=>{
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                className: (styles_module_default()).feedbackText,
+                className: (feedback_styles_module_default()).feedbackText,
                 children: item.text
             })
         ]
@@ -562,7 +805,7 @@ const Feedbacks = ()=>{
                 disabled: secondVisible,
                 children: /*#__PURE__*/ jsx_runtime_.jsx(arrowRight, {})
             }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(container/* default */.Z, {
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(container, {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                         children: "Отзывы"
@@ -596,32 +839,34 @@ const Feedbacks = ()=>{
 };
 /* harmony default export */ const feedbacks = (Feedbacks);
 
+// EXTERNAL MODULE: ./src/app/components/button/styles.module.scss
+var button_styles_module = __webpack_require__(5710);
+var button_styles_module_default = /*#__PURE__*/__webpack_require__.n(button_styles_module);
+;// CONCATENATED MODULE: ./src/app/components/button/index.tsx
 
-/***/ }),
 
-/***/ 4759:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+const Button = ({ children, loading })=>{
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("button", {
+        className: (button_styles_module_default()).button,
+        disabled: loading,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                children: children
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: `${(button_styles_module_default()).loading} ${loading ? (button_styles_module_default()).visible : {}}`,
+                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: (button_styles_module_default()).ringLoader
+                })
+            })
+        ]
+    });
+};
+/* harmony default export */ const components_button = (Button);
 
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ hello)
-});
-
-// EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(6786);
-// EXTERNAL MODULE: ./src/app/components/button/index.tsx
-var components_button = __webpack_require__(6514);
-// EXTERNAL MODULE: ./src/app/components/container/index.tsx
-var container = __webpack_require__(2532);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1440);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-// EXTERNAL MODULE: external "next/dist/compiled/react"
-var react_ = __webpack_require__(8038);
 ;// CONCATENATED MODULE: ./public/icons/logo.tsx
 
 const Logo = ()=>{
@@ -957,8 +1202,8 @@ const Logo = ()=>{
 /* harmony default export */ const logo = (Logo);
 
 // EXTERNAL MODULE: ./src/app/blocks/hello/styles.module.scss
-var styles_module = __webpack_require__(7557);
-var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
+var hello_styles_module = __webpack_require__(7557);
+var hello_styles_module_default = /*#__PURE__*/__webpack_require__.n(hello_styles_module);
 ;// CONCATENATED MODULE: ./src/app/blocks/hello/index.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
@@ -979,13 +1224,13 @@ const Hello = ()=>{
         };
     }, []);
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: (styles_module_default()).hello,
+        className: (hello_styles_module_default()).hello,
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (styles_module_default()).helloBlock,
-                children: /*#__PURE__*/ jsx_runtime_.jsx(container/* default */.Z, {
+                className: (hello_styles_module_default()).helloBlock,
+                children: /*#__PURE__*/ jsx_runtime_.jsx(container, {
                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (styles_module_default()).helloContainer,
+                        className: (hello_styles_module_default()).helloContainer,
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("header", {
                                 style: {
@@ -993,19 +1238,19 @@ const Hello = ()=>{
                                 },
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: (styles_module_default()).logo,
+                                        className: (hello_styles_module_default()).logo,
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (styles_module_default()).blur
+                                                className: (hello_styles_module_default()).blur
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx(logo, {})
                                         ]
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("nav", {
-                                        className: (styles_module_default()).links,
+                                        className: (hello_styles_module_default()).links,
                                         children: [
                                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: (styles_module_default()).phones,
+                                                className: (hello_styles_module_default()).phones,
                                                 children: [
                                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                         children: "+34 633 51 02 26"
@@ -1014,19 +1259,19 @@ const Hello = ()=>{
                                                         children: "+34 685 54 27 31"
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: (styles_module_default()).whatsappIcon
+                                                        className: (hello_styles_module_default()).whatsappIcon
                                                     })
                                                 ]
                                             }),
                                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                                                 href: "mailto:immigrationservice.spain@gmail.com",
-                                                className: (styles_module_default()).mailLink,
+                                                className: (hello_styles_module_default()).mailLink,
                                                 children: [
                                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                         children: "immigrationservice.spain@gmail.com"
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                        className: (styles_module_default()).mailIcon
+                                                        className: (hello_styles_module_default()).mailIcon
                                                     })
                                                 ]
                                             })
@@ -1035,10 +1280,10 @@ const Hello = ()=>{
                                 ]
                             }),
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: (styles_module_default()).hero,
+                                className: (hello_styles_module_default()).hero,
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (styles_module_default()).blur
+                                        className: (hello_styles_module_default()).blur
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                                         children: "Осуществите свою мечту о\xa0жизни в\xa0Испании"
@@ -1049,23 +1294,23 @@ const Hello = ()=>{
                                 ]
                             }),
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: (styles_module_default()).buttons,
+                                className: (hello_styles_module_default()).buttons,
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                        className: (styles_module_default()).link,
+                                        className: (hello_styles_module_default()).link,
                                         href: "#contact",
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(components_button/* default */.Z, {
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(components_button, {
                                             loading: false,
                                             children: "Оставить заявку"
                                         })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                        className: (styles_module_default()).address,
+                                        className: (hello_styles_module_default()).address,
                                         children: [
                                             "29660, Marbella (Malaga), Calle Ricardo Soriano 31, 1A",
                                             " ",
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                id: (styles_module_default()).locationIcon
+                                                id: (hello_styles_module_default()).locationIcon
                                             })
                                         ]
                                     })
@@ -1076,7 +1321,7 @@ const Hello = ()=>{
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (styles_module_default()).helloBG,
+                className: (hello_styles_module_default()).helloBG,
                 style: {
                     transform: `translateY(${offset * 0.3}px)`,
                     zIndex: -1
@@ -1087,30 +1332,92 @@ const Hello = ()=>{
 };
 /* harmony default export */ const hello = (Hello);
 
+// EXTERNAL MODULE: ./src/app/blocks/information/styles.module.scss
+var information_styles_module = __webpack_require__(4311);
+var information_styles_module_default = /*#__PURE__*/__webpack_require__.n(information_styles_module);
+;// CONCATENATED MODULE: ./src/app/blocks/information/index.tsx
 
-/***/ }),
 
-/***/ 188:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
+const Information = ()=>{
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+        className: (information_styles_module_default()).information,
+        id: "info",
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (information_styles_module_default()).blur
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (information_styles_module_default()).gradient
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(container, {
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (information_styles_module_default()).information__block,
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                            children: "Информация о ВНЖ"
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                            children: [
+                                "Вид на\xa0жительство в\xa0Испании\xa0— это документ, с\xa0которым иностранцу разрешено временно находиться на\xa0территории страны. В\xa0зависимости от основания выдачи данного статуса может быть разрешена трудовая деятельность или нет. ВНЖ преимущественно действует от\xa012\xa0до\xa024 месяцев с\xa0возможностью продления в\xa0отличие от\xa0ПМЖ, который выдается на\xa05\xa0лет и\xa0не\xa0ограничивает владельца в\xa0выборе деятельности. Имея вид на\xa0жительство в\xa0Испании, есть возможность путешествовать без виз по Шенгенской зоне и\xa0территории ЕС. Миграционная политика страны регулируется законами",
+                                " ",
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                                    className: (information_styles_module_default()).a,
+                                    href: "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544",
+                                    target: "_blank",
+                                    children: [
+                                        " ",
+                                        "\xabО\xa0правах и\xa0свободах иностранцев",
+                                        " ",
+                                        "и\xa0их\xa0социальной интеграции\xbb"
+                                    ]
+                                }),
+                                " ",
+                                "и",
+                                " ",
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                                    className: (information_styles_module_default()).a,
+                                    href: "https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074",
+                                    children: [
+                                        " ",
+                                        "\xabО\xa0поддержке предпринимателей"
+                                    ]
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                    className: (information_styles_module_default()).a,
+                                    href: "https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074",
+                                    children: "и\xa0их\xa0интернационализации\xbb"
+                                }),
+                                ". Иностранцам для пересечения границы и\xa0последующего оформления ВНЖ необходимо получить национальную визу категории D.\xa0Законодательством предусмотрены несколько механизмов интеграции мигрантов в социально-экономическую жизнь страны, которые далее в\xa0статье рассмотрены более подробно."
+                            ]
+                        })
+                    ]
+                })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (information_styles_module_default()).warning,
+                children: /*#__PURE__*/ jsx_runtime_.jsx(container, {
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (information_styles_module_default()).warning__block,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                children: " Внимание!"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                children: "Документ, позволяющий временное или постоянное проживание в Испании, выглядит как пластиковая карта с\xa0фото и\xa0основными данными владельца, включая идентификационный номер NIE, который присваивается иностранцу при оформлении ВНЖ автоматически."
+                            })
+                        ]
+                    })
+                })
+            })
+        ]
+    });
+};
+/* harmony default export */ const information = (Information);
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ makeOrder)
-});
-
-// EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(6786);
-// EXTERNAL MODULE: ./src/app/components/button/index.tsx
-var components_button = __webpack_require__(6514);
-// EXTERNAL MODULE: ./src/app/components/container/index.tsx
-var container = __webpack_require__(2532);
 // EXTERNAL MODULE: ./src/app/components/document/styles.module.scss
-var styles_module = __webpack_require__(5813);
-var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
+var document_styles_module = __webpack_require__(5813);
+var document_styles_module_default = /*#__PURE__*/__webpack_require__.n(document_styles_module);
 ;// CONCATENATED MODULE: ./src/app/components/document/index.tsx
 
 
@@ -1125,10 +1432,10 @@ const Document = ({ open, setOpen })=>{
     };
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         onClick: handleBackgroundClick,
-        className: `${(styles_module_default()).bg} ${open ? (styles_module_default()).open : {}}`,
+        className: `${(document_styles_module_default()).bg} ${open ? (document_styles_module_default()).open : {}}`,
         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
             onClick: (e)=>e.stopPropagation(),
-            className: `${(styles_module_default()).document} ${open ? (styles_module_default()).open : {}}`,
+            className: `${(document_styles_module_default()).document} ${open ? (document_styles_module_default()).open : {}}`,
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                 children: [
                     'Согласие на обработку персональных данных Настоящим в соответствии с Федеральным законом № 152-ФЗ \xabО персональных данных\xbb от 27.07.2006 года свободно, своей волей и в своем интересе выражаю свое безусловное согласие на обработку моих персональных данных ООО "БК-ГРУПП" (ОГРН 1187746330188, ИНН 7719477081), зарегистрированным в соответствии с законодательством РФ по адресу: Ткацкая ул, дом № 5, строение 3, офис 3-201, Москва, Российская Федерация, 105318 (далее по тексту - Оператор).',
@@ -1185,8 +1492,6 @@ const Document = ({ open, setOpen })=>{
 
 // EXTERNAL MODULE: ./node_modules/axios/lib/axios.js + 46 modules
 var axios = __webpack_require__(3258);
-// EXTERNAL MODULE: external "next/dist/compiled/react"
-var react_ = __webpack_require__(8038);
 // EXTERNAL MODULE: ./src/app/blocks/makeOrder/styles.module.scss
 var makeOrder_styles_module = __webpack_require__(3115);
 var makeOrder_styles_module_default = /*#__PURE__*/__webpack_require__.n(makeOrder_styles_module);
@@ -1231,7 +1536,7 @@ const MakeOrder = ()=>{
             /*#__PURE__*/ jsx_runtime_.jsx("section", {
                 className: (makeOrder_styles_module_default()).makeOrder,
                 id: "contact",
-                children: /*#__PURE__*/ jsx_runtime_.jsx(container/* default */.Z, {
+                children: /*#__PURE__*/ jsx_runtime_.jsx(container, {
                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
                         className: (makeOrder_styles_module_default()).orderForm,
                         onSubmit: (e)=>{
@@ -1324,7 +1629,7 @@ const MakeOrder = ()=>{
                                     })
                                 ]
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx(components_button/* default */.Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(components_button, {
                                 loading: loading,
                                 children: isSended ? "Данные отправлены" : "Отправить заявку"
                             })
@@ -1337,946 +1642,8 @@ const MakeOrder = ()=>{
 };
 /* harmony default export */ const makeOrder = (MakeOrder);
 
-
-/***/ }),
-
-/***/ 6230:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _app_components_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2532);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8038);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5400);
-/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_module_scss__WEBPACK_IMPORTED_MODULE_3__);
-/* __next_internal_client_entry_do_not_use__ default auto */ 
-
-
-
-const ResidentPermitTypes = ()=>{
-    const [chosenPermit, setChosenPermit] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0);
-    const [offset, setOffset] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0);
-    const handleScroll = ()=>{
-        setOffset(window.pageYOffset);
-    };
-    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
-        window.addEventListener("scroll", handleScroll);
-        return ()=>{
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-    const residentPermitTypes = [
-        {
-            name: "ВНЖ для финансово независимых лиц",
-            description: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-                children: [
-                    " ",
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                        children: [
-                            "Предоставляется иностранцу на\xa01\xa0год. По\xa0истечении указанного срока резидент может продлить свой статус сразу на\xa02\xa0года.",
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
-                                children: " Преимущества: "
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ol", {
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        children: "Испанский резидент имеет право находиться на\xa0территории Евросоюза и\xa0пользоваться всеми привилегиями своего положения до окончания срока действия вида на\xa0жительство."
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        children: "Владелец карты испанского резидента, а\xa0также члены его семьи, могут свободно перемещаться по\xa0всем странам\xa0ЕС и\xa0Шенгенского договора без оформления виз и\xa0прочей въездной документации."
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        children: "Иностранец может купить или арендовать испанскую недвижимость, которая относится к\xa0одним из\xa0самых выгодных объектов для инвестирования в\xa0Европе."
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        children: "Статус испанского резидента по\xa0окончании срока действия можно легко продлить, подав соответствующие документы в\xa0полицию."
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        children: "В\xa0ситуации политической нестабильности испанский ВНЖ станет гарантией быстрого переезда в\xa0безопасную страну."
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        children: "Владельцы карты ВНЖ в\xa0Испании получают доступ к\xa0услугам государственных образовательных и\xa0медицинских учреждений."
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        children: "По\xa0сравнению с\xa0другими развитыми европейским странами Испания предлагает своим резидентам продукты и\xa0товары первой необходимости по\xa0более доступным ценам."
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                        children: "Знаменитые курорты Испании будут доступны для резидентов этой страны в\xa0любое время года."
-                                    })
-                                ]
-                            })
-                        ]
-                    })
-                ]
-            })
-        },
-        {
-            name: "Виза инфестора (Золотая виза)",
-            description: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                    className: "other",
-                    children: [
-                        "Дает зарубежному инвестору право на\xa0двухлетний ВНЖ, который можно продлить еще на\xa05\xa0лет. Впоследствии иностранец имеет возможность получить ПМЖ и\xa0оформить гражданство Испании.",
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
-                            children: "Возможности: "
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ol", {
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Проживание, а\xa0также осуществление профессиональной и предпринимательской деятельности в\xa0Испании."
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Пребывание в\xa0любой из\xa0стран Шенгенской зоны без ограничений во времени."
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Переезд в\xa0курортную зону с\xa0мягким климатом и\xa0комфортными условиями жизни."
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Иммиграция вместе с\xa0членами семьи."
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Оформление в\xa0дальнейшем ПМЖ и\xa0гражданства Испании."
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Нет необходимости постоянно проживать в\xa0Испании."
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Можно получить двухлетний вид на\xa0жительство и\xa0продлить его еще на\xa05\xa0лет."
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Оформить первичный ВНЖ можно в\xa0любое время на\xa0протяжении срока действия визы инвестора."
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Длительность визовой процедуры составляет от\xa010\xa0до\xa020\xa0дней."
-                                })
-                            ]
-                        })
-                    ]
-                })
-            })
-        },
-        {
-            name: "ВНЖ по студенческой визе",
-            description: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                    className: "other",
-                    children: [
-                        "Разрешение на\xa0проживание в\xa0Испании более 90\xa0дней для иностранцев, которые планируют обучение в\xa0вузах либо на\xa0языковых курсах в\xa0этой стране. Мы\xa0Вам поможем правильно подобрать программу языковых курсов, получить студенческую визу и\xa0оформить на\xa0ее\xa0основании ВНЖ. Срок оформления документа занимает от\xa02\xa0до\xa04\xa0месяцев.",
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
-                            children: "Преимущества: "
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ol", {
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Законное проживание в\xa0Испании в\xa0течение срока обучения, а\xa0также право работать до\xa04-х часов в\xa0день. Возможность остаться жить в Испании после окончания обучения при наличии работы или бизнеса. Право на"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "оформление студенческого ВНЖ с\xa0ежегодным продлением одновременно с\xa0супругом/супругой, отцом, матерью и\xa0детьми. Право законно находиться в\xa0Испании на\xa0таких промежуточных этапах, как, например, поиск недвижимости для последующего оформления ВНЖ инвестора."
-                                })
-                            ]
-                        })
-                    ]
-                })
-            })
-        },
-        {
-            name: "ВНЖ цифровой кочевник",
-            description: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                    className: "other",
-                    children: [
-                        "ВНЖ цифрового кочевника в\xa0Испании для удаленных работников оформляется в\xa0Испании. Документы подаются электронно без присутствия заявителя. Обязательное условие: на\xa0момент подачи документов Заявитель должен находиться на\xa0территории Испании.При положительном решении ВНЖ цифрового кочевника выдается на\xa03\xa0года.",
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("b", {
-                            children: "Требования:"
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ol", {
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "документальное подтверждение университетского образования в котирующихся ВУЗах, профессионального образования, образования в престижных бизнес-школах или наличие профессионального опыта не менее трех лет;"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Наличие реальной продолжительной деятельности компании, с которой заключен трудовой договор;"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Документальное подтверждение наличие трудовых или профессиональных отношений, позволяющих дистанционно работать или оказывать услуги;"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    children: "Подтверждение о\xa0наличии трудовых или профессиональных отношений между кандидатом и\xa0работодателем не\xa0менее трех месяцев, а\xa0также документальное подтверждение о\xa0возможности осуществления данной деятельности дистанционно."
-                                })
-                            ]
-                        })
-                    ]
-                })
-            })
-        }
-    ];
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-        className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().residentPermitTypes),
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().background)
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_components_container__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().residentPermitTypes__block),
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().buttons),
-                        children: residentPermitTypes.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                className: chosenPermit === index ? (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().chosen) : "",
-                                onClick: ()=>setChosenPermit(index),
-                                children: item.name
-                            }))
-                    })
-                })
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().description),
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_app_components_container__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().article),
-                            children: residentPermitTypes[0].description
-                        }),
-                        residentPermitTypes.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: `${(_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().article)} ${(_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().other)} ${index === chosenPermit ? (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().chosen) : ""}`,
-                                children: item.description
-                            }))
-                    ]
-                })
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_3___default().nextSection)
-            })
-        ]
-    });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ResidentPermitTypes);
-
-
-/***/ }),
-
-/***/ 6514:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5710);
-/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_module_scss__WEBPACK_IMPORTED_MODULE_1__);
-
-
-const Button = ({ children, loading })=>{
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
-        className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default().button),
-        disabled: loading,
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                children: children
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: `${(_styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default().loading)} ${loading ? (_styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default().visible) : {}}`,
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default().ringLoader)
-                })
-            })
-        ]
-    });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
-
-
-/***/ }),
-
-/***/ 2532:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3646);
-/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_module_scss__WEBPACK_IMPORTED_MODULE_1__);
-
-
-const Container = ({ children })=>{
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-        className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_1___default().container),
-        children: children
-    });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Container);
-
-
-/***/ }),
-
-/***/ 1719:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8038);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4590);
-/* harmony import */ var _styles_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_module_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* __next_internal_client_entry_do_not_use__ default auto */ 
-
-
-const FloatingButton = ()=>{
-    const arrow = "../../../../public/Mask group.png";
-    const [isVisible, setIsVisible] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
-    const handleScroll = ()=>{
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        setIsVisible(scrollTop > 500);
-    };
-    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        window.addEventListener("scroll", handleScroll);
-        return ()=>{
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-    const handleClick = ()=>{
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    };
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-        onClick: handleClick,
-        className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_2___default().floatingButton),
-        style: isVisible ? {
-            transform: "translateY(0)",
-            opacity: 1,
-            pointerEvents: "all"
-        } : {
-            transform: "translateY(40px)",
-            opacity: 0,
-            pointerEvents: "none"
-        },
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-            className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_2___default().arrow)
-        })
-    });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FloatingButton);
-
-
-/***/ }),
-
-/***/ 9924:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"aboutUs": "styles_aboutUs__syxd4",
-	"info": "styles_info__7_tho",
-	"hero": "styles_hero__TOfXT",
-	"image": "styles_image__32ECl",
-	"spain": "styles_spain__pqROr",
-	"personsGroup": "styles_personsGroup__qbpkv",
-	"dart": "styles_dart__sVeAS",
-	"hands": "styles_hands__RftXU",
-	"map": "styles_map__PDQKJ"
-};
-
-
-/***/ }),
-
-/***/ 9127:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"feedback": "styles_feedback__id7fE",
-	"feedbackText": "styles_feedbackText__vZoBQ",
-	"badge": "styles_badge__uMKLC",
-	"avatar": "styles_avatar__AcV9A"
-};
-
-
-/***/ }),
-
-/***/ 3972:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"feedbacks": "styles_feedbacks__UDYe1",
-	"allFeedbacks": "styles_allFeedbacks__qEr_N",
-	"feedbacksList": "styles_feedbacksList__UK2e8",
-	"first": "styles_first__nVaGL",
-	"open": "styles_open__XPeHZ",
-	"second": "styles_second__8VjRD",
-	"arrowBtn": "styles_arrowBtn__nM8uf",
-	"back": "styles_back__qiU1P",
-	"forward": "styles_forward__HD8Pk"
-};
-
-
-/***/ }),
-
-/***/ 7557:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"hello": "styles_hello__8Nr2Z",
-	"loadingAnimation": "styles_loadingAnimation__T2hsm",
-	"whatsappIcon": "styles_whatsappIcon__PV0uU",
-	"mailIcon": "styles_mailIcon__7pjRO",
-	"mailLink": "styles_mailLink__3uM_d",
-	"helloBlock": "styles_helloBlock__kObkl",
-	"helloContainer": "styles_helloContainer__K8Hr3",
-	"helloBG": "styles_helloBG__dPJo5",
-	"bgLoading": "styles_bgLoading__G7mau",
-	"buttons": "styles_buttons__aXKda",
-	"buttonsLoading": "styles_buttonsLoading__OPMyS",
-	"address": "styles_address__9yPRA",
-	"locationIcon": "styles_locationIcon__QPkNj",
-	"phones": "styles_phones__qi3uK",
-	"headerLoading": "styles_headerLoading__Qhepc",
-	"links": "styles_links__UcCWj",
-	"logo": "styles_logo__jrZuR",
-	"hero": "styles_hero__Oh8Ku",
-	"heroLoading": "styles_heroLoading__KMLsS",
-	"blur": "styles_blur__u4sH1"
-};
-
-
-/***/ }),
-
-/***/ 8900:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"information": "styles_information__R3HLf",
-	"a": "styles_a__dBvok",
-	"gradient": "styles_gradient__QEynK",
-	"blur": "styles_blur__RA48o",
-	"information__block": "styles_information__block__yyCoK",
-	"warning": "styles_warning__ZFpZ8",
-	"warning__block": "styles_warning__block__dFuvw"
-};
-
-
-/***/ }),
-
-/***/ 3115:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"makeOrder": "styles_makeOrder__VNttz",
-	"orderForm": "styles_orderForm__VZ6ta",
-	"visible": "styles_visible___1S4w",
-	"documentLink": "styles_documentLink__WApPF"
-};
-
-
-/***/ }),
-
-/***/ 8290:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"service": "styles_service__khX80",
-	"price": "styles_price__YM3Me"
-};
-
-
-/***/ }),
-
-/***/ 7634:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"services": "styles_services__s2GX1",
-	"nextSection": "styles_nextSection__IyLpg"
-};
-
-
-/***/ }),
-
-/***/ 5400:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"residentPermitTypes": "styles_residentPermitTypes__1QSwD",
-	"background": "styles_background__a3DEI",
-	"residentPermitTypes__block": "styles_residentPermitTypes__block__Eeefc",
-	"buttons": "styles_buttons__oYxq8",
-	"chosen": "styles_chosen__C7ZUd",
-	"description": "styles_description__Obuxz",
-	"article": "styles_article__k_S78",
-	"other": "styles_other__g37UO",
-	"nextSection": "styles_nextSection__5dtWg"
-};
-
-
-/***/ }),
-
-/***/ 5710:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"button": "styles_button__cSpVb",
-	"loading": "styles_loading__jw97X",
-	"visible": "styles_visible__4R_iU",
-	"ringLoader": "styles_ringLoader__2LmvO",
-	"ring-loader-animation": "styles_ring-loader-animation__feBMU"
-};
-
-
-/***/ }),
-
-/***/ 1628:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"container": "styles_container__8Kj2r"
-};
-
-
-/***/ }),
-
-/***/ 3646:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"container": "styles_container__8Kj2r"
-};
-
-
-/***/ }),
-
-/***/ 5813:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"bg": "styles_bg__ckzVn",
-	"open": "styles_open__QKRZh",
-	"document": "styles_document__pLXcR"
-};
-
-
-/***/ }),
-
-/***/ 4590:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"floatingButton": "styles_floatingButton__7fCdm",
-	"arrow": "styles_arrow__ZkXzh"
-};
-
-
-/***/ }),
-
-/***/ 5497:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"footer": "styles_footer__LeCZb",
-	"link": "styles_link__mfGzx",
-	"footerBlock": "styles_footerBlock__jBCo2",
-	"address": "styles_address__Pjxtk",
-	"contacts": "styles_contacts__js_FQ",
-	"telegram": "styles_telegram__bI6o7",
-	"telegramIcon": "styles_telegramIcon__zg3c1"
-};
-
-
-/***/ }),
-
-/***/ 6667:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"header": "styles_header__BRgIe",
-	"headerBlock": "styles_headerBlock__5jZsz",
-	"nextSectionBlock": "styles_nextSectionBlock__0rJAB",
-	"nextSection": "styles_nextSection__f3LQq",
-	"links": "styles_links__8c9mf",
-	"link": "styles_link__wdqVM"
-};
-
-
-/***/ }),
-
-/***/ 4053:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ RootLayout),
-/* harmony export */   metadata: () => (/* binding */ metadata)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5856);
-/* harmony import */ var next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5023);
-/* harmony import */ var _globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_globals_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-const metadata = {
-    title: "Immigration service",
-    description: "Осуществите свою мечту о жизни в Испании! Наша команда экспертов поможет вам сделать первый шаг к новому захватывающему приключению и найти свое счастье в этой удивительной стране!"
-};
-function RootLayout({ children }) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("html", {
-        lang: "en",
-        children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("head", {
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
-                        rel: "icon",
-                        href: "/favicon.ico",
-                        sizes: "any"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
-                        rel: "icon",
-                        href: "/favicon.svg",
-                        sizes: "any"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
-                        rel: "apple-touch-icon",
-                        href: "/favicon.ico",
-                        sizes: "any"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
-                        rel: "apple-touch-icon",
-                        href: "/favicon.svg",
-                        sizes: "any"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("body", {
-                className: (next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_2___default().className),
-                children: children
-            })
-        ]
-    });
-}
-
-
-/***/ }),
-
-/***/ 3575:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ Home)
-});
-
-// EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(6786);
-// EXTERNAL MODULE: ./node_modules/next/dist/client/components/noop-head.js
-var noop_head = __webpack_require__(1528);
-var noop_head_default = /*#__PURE__*/__webpack_require__.n(noop_head);
-// EXTERNAL MODULE: ./src/app/components/container/styles.module.scss
-var styles_module = __webpack_require__(1628);
-var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
-;// CONCATENATED MODULE: ./src/app/components/container/index.tsx
-
-
-const Container = ({ children })=>{
-    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: (styles_module_default()).container,
-        children: children
-    });
-};
-/* harmony default export */ const container = (Container);
-
-// EXTERNAL MODULE: ./src/app/blocks/aboutUs/styles.module.scss
-var aboutUs_styles_module = __webpack_require__(9924);
-var aboutUs_styles_module_default = /*#__PURE__*/__webpack_require__.n(aboutUs_styles_module);
-;// CONCATENATED MODULE: ./src/app/blocks/aboutUs/index.tsx
-
-
-
-const AboutUs = ()=>{
-    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: (aboutUs_styles_module_default()).aboutUs,
-        id: "about-us",
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(container, {
-            children: [
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (aboutUs_styles_module_default()).info,
-                    children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (aboutUs_styles_module_default()).hero,
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                    children: "О нас"
-                                }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                    children: [
-                                        "Мы\xa0— компания, которая помогает русскоязычным гражданам оформить ВНЖ (вид на\xa0жительство) в\xa0Испании. Мы\xa0осознаем, как важно иметь квалифицированных специалистов рядом с\xa0собой в\xa0этом процессе, поэтому мы\xa0гордимся тем, что работаем в\xa0тесном сотрудничестве с испанскими адвокатами и\xa0юристами. ",
-                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                                        "Наша команда состоит из\xa0опытных профессионалов, которые готовы предоставить вам индивидуальный подход и\xa0решить все вопросы, связанные с\xa0получением резиденции в\xa0Испании. Мы\xa0оказываем поддержку нашим клиентам на\xa0каждом этапе оформления ВНЖ, начиная от\xa0сбора необходимых документов, заканчивая отправкой их\xa0на рассмотрение властям."
-                                    ]
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: (aboutUs_styles_module_default()).image,
-                            id: (aboutUs_styles_module_default()).spain
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (aboutUs_styles_module_default()).info,
-                    children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (aboutUs_styles_module_default()).hero,
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                    children: "Мы понимаем"
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    children: "что процесс получения ВНЖ может быть сложным и\xa0запутанным, особенно для тех, кто не\xa0говорит на\xa0испанском языке или не\xa0знаком с\xa0местными законодательными процедурами. Поэтому мы\xa0делаем все возможное, чтобы помочь нашим клиентам преодолеть любые трудности и\xa0сделать этот процесс максимально простым и\xa0удобным для них."
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: (aboutUs_styles_module_default()).image,
-                            id: (aboutUs_styles_module_default()).personsGroup
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (aboutUs_styles_module_default()).info,
-                    children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (aboutUs_styles_module_default()).hero,
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                    children: "Наша цель"
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    children: "обеспечить нашим клиентам легальный и\xa0безопасный путь к\xa0обретению резиденции в\xa0Испании. Мы\xa0гарантируем конфиденциальность информации, внимательное отношение к\xa0каждому клиенту и оперативность в\xa0решении всех возникающих вопросов."
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: (aboutUs_styles_module_default()).image,
-                            id: (aboutUs_styles_module_default()).dart
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (aboutUs_styles_module_default()).info,
-                    children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (aboutUs_styles_module_default()).hero,
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                    children: "Помощь и поддержка"
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    children: "это то\xa0что готова предоставить наша компания если вы\xa0хотите получить ВНЖ в\xa0Испании. Обращайтесь к\xa0нам, и\xa0мы\xa0сделаем все возможное, чтобы ваше оформление резиденции прошло успешно и\xa0без лишних затруднений."
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: (aboutUs_styles_module_default()).image,
-                            id: (aboutUs_styles_module_default()).hands
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (aboutUs_styles_module_default()).info,
-                    children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (aboutUs_styles_module_default()).hero,
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                    children: "Мы находимся"
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    children: "по\xa0адресу Marbella (Malaga), Calle Ricardo Soriano\xa031, 1A, но\xa0это не\xa0мешает нам помогать вам в\xa0оформлении визы D\xa0в Москве, а\xa0также помочь вам подготовиться к\xa0собеседованию в\xa0Консульстве Испании"
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: (aboutUs_styles_module_default()).image,
-                            id: (aboutUs_styles_module_default()).map
-                        })
-                    ]
-                })
-            ]
-        })
-    });
-};
-/* harmony default export */ const aboutUs = (AboutUs);
-
-// EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js
-var module_proxy = __webpack_require__(1363);
-;// CONCATENATED MODULE: ./src/app/blocks/feedbacks/index.tsx
-
-const proxy = (0,module_proxy.createProxy)(String.raw`/home/yaroslav/projects/immigration-service/src/app/blocks/feedbacks/index.tsx`)
-
-// Accessing the __esModule property and exporting $$typeof are required here.
-// The __esModule getter forces the proxy target to create the default export
-// and the $$typeof value is for rendering logic to determine if the module
-// is a client boundary.
-const { __esModule, $$typeof } = proxy;
-const __default__ = proxy.default;
-
-
-/* harmony default export */ const feedbacks = (__default__);
-;// CONCATENATED MODULE: ./src/app/blocks/hello/index.tsx
-
-const hello_proxy = (0,module_proxy.createProxy)(String.raw`/home/yaroslav/projects/immigration-service/src/app/blocks/hello/index.tsx`)
-
-// Accessing the __esModule property and exporting $$typeof are required here.
-// The __esModule getter forces the proxy target to create the default export
-// and the $$typeof value is for rendering logic to determine if the module
-// is a client boundary.
-const { __esModule: hello_esModule, $$typeof: hello_$$typeof } = hello_proxy;
-const hello_default_ = hello_proxy.default;
-
-
-/* harmony default export */ const hello = (hello_default_);
-// EXTERNAL MODULE: ./src/app/blocks/information/styles.module.scss
-var information_styles_module = __webpack_require__(8900);
-var information_styles_module_default = /*#__PURE__*/__webpack_require__.n(information_styles_module);
-;// CONCATENATED MODULE: ./src/app/blocks/information/index.tsx
-
-
-
-const Information = ()=>{
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
-        className: (information_styles_module_default()).information,
-        id: "info",
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (information_styles_module_default()).blur
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (information_styles_module_default()).gradient
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(container, {
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (information_styles_module_default()).information__block,
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                            children: "Информация о ВНЖ"
-                        }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                            children: [
-                                "Вид на\xa0жительство в\xa0Испании\xa0— это документ, с\xa0которым иностранцу разрешено временно находиться на\xa0территории страны. В\xa0зависимости от основания выдачи данного статуса может быть разрешена трудовая деятельность или нет. ВНЖ преимущественно действует от\xa012\xa0до\xa024 месяцев с\xa0возможностью продления в\xa0отличие от\xa0ПМЖ, который выдается на\xa05\xa0лет и\xa0не\xa0ограничивает владельца в\xa0выборе деятельности. Имея вид на\xa0жительство в\xa0Испании, есть возможность путешествовать без виз по Шенгенской зоне и\xa0территории ЕС. Миграционная политика страны регулируется законами",
-                                " ",
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                                    className: (information_styles_module_default()).a,
-                                    href: "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544",
-                                    target: "_blank",
-                                    children: [
-                                        " ",
-                                        "\xabО\xa0правах и\xa0свободах иностранцев",
-                                        " ",
-                                        "и\xa0их\xa0социальной интеграции\xbb"
-                                    ]
-                                }),
-                                " ",
-                                "и",
-                                " ",
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                                    className: (information_styles_module_default()).a,
-                                    href: "https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074",
-                                    children: [
-                                        " ",
-                                        "\xabО\xa0поддержке предпринимателей"
-                                    ]
-                                }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                    className: (information_styles_module_default()).a,
-                                    href: "https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074",
-                                    children: "и\xa0их\xa0интернационализации\xbb"
-                                }),
-                                ". Иностранцам для пересечения границы и\xa0последующего оформления ВНЖ необходимо получить национальную визу категории D.\xa0Законодательством предусмотрены несколько механизмов интеграции мигрантов в социально-экономическую жизнь страны, которые далее в\xa0статье рассмотрены более подробно."
-                            ]
-                        })
-                    ]
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (information_styles_module_default()).warning,
-                children: /*#__PURE__*/ jsx_runtime_.jsx(container, {
-                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (information_styles_module_default()).warning__block,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                children: " Внимание!"
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                children: "Документ, позволяющий временное или постоянное проживание в Испании, выглядит как пластиковая карта с\xa0фото и\xa0основными данными владельца, включая идентификационный номер NIE, который присваивается иностранцу при оформлении ВНЖ автоматически."
-                            })
-                        ]
-                    })
-                })
-            })
-        ]
-    });
-};
-/* harmony default export */ const information = (Information);
-
-;// CONCATENATED MODULE: ./src/app/blocks/makeOrder/index.tsx
-
-const makeOrder_proxy = (0,module_proxy.createProxy)(String.raw`/home/yaroslav/projects/immigration-service/src/app/blocks/makeOrder/index.tsx`)
-
-// Accessing the __esModule property and exporting $$typeof are required here.
-// The __esModule getter forces the proxy target to create the default export
-// and the $$typeof value is for rendering logic to determine if the module
-// is a client boundary.
-const { __esModule: makeOrder_esModule, $$typeof: makeOrder_$$typeof } = makeOrder_proxy;
-const makeOrder_default_ = makeOrder_proxy.default;
-
-
-/* harmony default export */ const makeOrder = (makeOrder_default_);
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(5124);
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: ./src/app/blocks/prices/service/styles.module.scss
-var service_styles_module = __webpack_require__(8290);
+var service_styles_module = __webpack_require__(6033);
 var service_styles_module_default = /*#__PURE__*/__webpack_require__.n(service_styles_module);
 ;// CONCATENATED MODULE: ./src/app/blocks/prices/service/index.tsx
 
@@ -2306,7 +1673,7 @@ const Service = ({ item })=>{
 /* harmony default export */ const service = (Service);
 
 // EXTERNAL MODULE: ./src/app/blocks/prices/styles.module.scss
-var prices_styles_module = __webpack_require__(7634);
+var prices_styles_module = __webpack_require__(1482);
 var prices_styles_module_default = /*#__PURE__*/__webpack_require__.n(prices_styles_module);
 ;// CONCATENATED MODULE: ./src/app/blocks/prices/index.tsx
 
@@ -2451,34 +1818,281 @@ const Prices = ()=>{
 };
 /* harmony default export */ const prices = (Prices);
 
+// EXTERNAL MODULE: ./src/app/blocks/residentPermitTypes/styles.module.scss
+var residentPermitTypes_styles_module = __webpack_require__(5400);
+var residentPermitTypes_styles_module_default = /*#__PURE__*/__webpack_require__.n(residentPermitTypes_styles_module);
 ;// CONCATENATED MODULE: ./src/app/blocks/residentPermitTypes/index.tsx
-
-const residentPermitTypes_proxy = (0,module_proxy.createProxy)(String.raw`/home/yaroslav/projects/immigration-service/src/app/blocks/residentPermitTypes/index.tsx`)
-
-// Accessing the __esModule property and exporting $$typeof are required here.
-// The __esModule getter forces the proxy target to create the default export
-// and the $$typeof value is for rendering logic to determine if the module
-// is a client boundary.
-const { __esModule: residentPermitTypes_esModule, $$typeof: residentPermitTypes_$$typeof } = residentPermitTypes_proxy;
-const residentPermitTypes_default_ = residentPermitTypes_proxy.default;
+/* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
-/* harmony default export */ const residentPermitTypes = (residentPermitTypes_default_);
+
+const ResidentPermitTypes = ()=>{
+    const [chosenPermit, setChosenPermit] = (0,react_.useState)(0);
+    const [offset, setOffset] = (0,react_.useState)(0);
+    const handleScroll = ()=>{
+        setOffset(window.pageYOffset);
+    };
+    (0,react_.useEffect)(()=>{
+        window.addEventListener("scroll", handleScroll);
+        return ()=>{
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+    const residentPermitTypes = [
+        {
+            name: "ВНЖ для финансово независимых лиц",
+            description: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+                children: [
+                    " ",
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                        children: [
+                            "Предоставляется иностранцу на\xa01\xa0год. По\xa0истечении указанного срока резидент может продлить свой статус сразу на\xa02\xa0года.",
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx("b", {
+                                children: " Преимущества: "
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ol", {
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        children: "Испанский резидент имеет право находиться на\xa0территории Евросоюза и\xa0пользоваться всеми привилегиями своего положения до окончания срока действия вида на\xa0жительство."
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        children: "Владелец карты испанского резидента, а\xa0также члены его семьи, могут свободно перемещаться по\xa0всем странам\xa0ЕС и\xa0Шенгенского договора без оформления виз и\xa0прочей въездной документации."
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        children: "Иностранец может купить или арендовать испанскую недвижимость, которая относится к\xa0одним из\xa0самых выгодных объектов для инвестирования в\xa0Европе."
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        children: "Статус испанского резидента по\xa0окончании срока действия можно легко продлить, подав соответствующие документы в\xa0полицию."
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        children: "В\xa0ситуации политической нестабильности испанский ВНЖ станет гарантией быстрого переезда в\xa0безопасную страну."
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        children: "Владельцы карты ВНЖ в\xa0Испании получают доступ к\xa0услугам государственных образовательных и\xa0медицинских учреждений."
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        children: "По\xa0сравнению с\xa0другими развитыми европейским странами Испания предлагает своим резидентам продукты и\xa0товары первой необходимости по\xa0более доступным ценам."
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                        children: "Знаменитые курорты Испании будут доступны для резидентов этой страны в\xa0любое время года."
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            })
+        },
+        {
+            name: "Виза инфестора (Золотая виза)",
+            description: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                    className: "other",
+                    children: [
+                        "Дает зарубежному инвестору право на\xa0двухлетний ВНЖ, который можно продлить еще на\xa05\xa0лет. Впоследствии иностранец имеет возможность получить ПМЖ и\xa0оформить гражданство Испании.",
+                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                        /*#__PURE__*/ jsx_runtime_.jsx("b", {
+                            children: "Возможности: "
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ol", {
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Проживание, а\xa0также осуществление профессиональной и предпринимательской деятельности в\xa0Испании."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Пребывание в\xa0любой из\xa0стран Шенгенской зоны без ограничений во времени."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Переезд в\xa0курортную зону с\xa0мягким климатом и\xa0комфортными условиями жизни."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Иммиграция вместе с\xa0членами семьи."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Оформление в\xa0дальнейшем ПМЖ и\xa0гражданства Испании."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Нет необходимости постоянно проживать в\xa0Испании."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Можно получить двухлетний вид на\xa0жительство и\xa0продлить его еще на\xa05\xa0лет."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Оформить первичный ВНЖ можно в\xa0любое время на\xa0протяжении срока действия визы инвестора."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Длительность визовой процедуры составляет от\xa010\xa0до\xa020\xa0дней."
+                                })
+                            ]
+                        })
+                    ]
+                })
+            })
+        },
+        {
+            name: "ВНЖ по студенческой визе",
+            description: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                    className: "other",
+                    children: [
+                        "Разрешение на\xa0проживание в\xa0Испании более 90\xa0дней для иностранцев, которые планируют обучение в\xa0вузах либо на\xa0языковых курсах в\xa0этой стране. Мы\xa0Вам поможем правильно подобрать программу языковых курсов, получить студенческую визу и\xa0оформить на\xa0ее\xa0основании ВНЖ. Срок оформления документа занимает от\xa02\xa0до\xa04\xa0месяцев.",
+                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                        /*#__PURE__*/ jsx_runtime_.jsx("b", {
+                            children: "Преимущества: "
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ol", {
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Законное проживание в\xa0Испании в\xa0течение срока обучения, а\xa0также право работать до\xa04-х часов в\xa0день. Возможность остаться жить в Испании после окончания обучения при наличии работы или бизнеса. Право на"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "оформление студенческого ВНЖ с\xa0ежегодным продлением одновременно с\xa0супругом/супругой, отцом, матерью и\xa0детьми. Право законно находиться в\xa0Испании на\xa0таких промежуточных этапах, как, например, поиск недвижимости для последующего оформления ВНЖ инвестора."
+                                })
+                            ]
+                        })
+                    ]
+                })
+            })
+        },
+        {
+            name: "ВНЖ цифровой кочевник",
+            description: /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                    className: "other",
+                    children: [
+                        "ВНЖ цифрового кочевника в\xa0Испании для удаленных работников оформляется в\xa0Испании. Документы подаются электронно без присутствия заявителя. Обязательное условие: на\xa0момент подачи документов Заявитель должен находиться на\xa0территории Испании.При положительном решении ВНЖ цифрового кочевника выдается на\xa03\xa0года.",
+                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                        /*#__PURE__*/ jsx_runtime_.jsx("b", {
+                            children: "Требования:"
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ol", {
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "документальное подтверждение университетского образования в котирующихся ВУЗах, профессионального образования, образования в престижных бизнес-школах или наличие профессионального опыта не менее трех лет;"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Наличие реальной продолжительной деятельности компании, с которой заключен трудовой договор;"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Документальное подтверждение наличие трудовых или профессиональных отношений, позволяющих дистанционно работать или оказывать услуги;"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                    children: "Подтверждение о\xa0наличии трудовых или профессиональных отношений между кандидатом и\xa0работодателем не\xa0менее трех месяцев, а\xa0также документальное подтверждение о\xa0возможности осуществления данной деятельности дистанционно."
+                                })
+                            ]
+                        })
+                    ]
+                })
+            })
+        }
+    ];
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+        className: (residentPermitTypes_styles_module_default()).residentPermitTypes,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (residentPermitTypes_styles_module_default()).background
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(container, {
+                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: (residentPermitTypes_styles_module_default()).residentPermitTypes__block,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (residentPermitTypes_styles_module_default()).buttons,
+                        children: residentPermitTypes.map((item, index)=>/*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                className: chosenPermit === index ? (residentPermitTypes_styles_module_default()).chosen : "",
+                                onClick: ()=>setChosenPermit(index),
+                                children: item.name
+                            }))
+                    })
+                })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (residentPermitTypes_styles_module_default()).description,
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(container, {
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (residentPermitTypes_styles_module_default()).article,
+                            children: residentPermitTypes[0].description
+                        }),
+                        residentPermitTypes.map((item, index)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: `${(residentPermitTypes_styles_module_default()).article} ${(residentPermitTypes_styles_module_default()).other} ${index === chosenPermit ? (residentPermitTypes_styles_module_default()).chosen : ""}`,
+                                children: item.description
+                            }))
+                    ]
+                })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (residentPermitTypes_styles_module_default()).nextSection
+            })
+        ]
+    });
+};
+/* harmony default export */ const residentPermitTypes = (ResidentPermitTypes);
+
+;// CONCATENATED MODULE: ./public/icons/arrow.tsx
+
+const Arrow = ()=>{
+    return /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+        width: "26",
+        height: "15",
+        viewBox: "0 0 26 15",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+            d: "M2 13L11.5858 3.41421C12.3668 2.63317 13.6332 2.63316 14.4142 3.41421L24 13",
+            stroke: "white",
+            "stroke-width": "4",
+            "stroke-linecap": "round"
+        })
+    });
+};
+/* harmony default export */ const arrow = (Arrow);
+
+// EXTERNAL MODULE: ./src/app/components/floatingButton/styles.module.scss
+var floatingButton_styles_module = __webpack_require__(4590);
+var floatingButton_styles_module_default = /*#__PURE__*/__webpack_require__.n(floatingButton_styles_module);
 ;// CONCATENATED MODULE: ./src/app/components/floatingButton/index.tsx
-
-const floatingButton_proxy = (0,module_proxy.createProxy)(String.raw`/home/yaroslav/projects/immigration-service/src/app/components/floatingButton/index.tsx`)
-
-// Accessing the __esModule property and exporting $$typeof are required here.
-// The __esModule getter forces the proxy target to create the default export
-// and the $$typeof value is for rendering logic to determine if the module
-// is a client boundary.
-const { __esModule: floatingButton_esModule, $$typeof: floatingButton_$$typeof } = floatingButton_proxy;
-const floatingButton_default_ = floatingButton_proxy.default;
+/* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
-/* harmony default export */ const floatingButton = (floatingButton_default_);
+
+const FloatingButton = ()=>{
+    const [isVisible, setIsVisible] = (0,react_.useState)(false);
+    const handleScroll = ()=>{
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        setIsVisible(scrollTop > 500);
+    };
+    (0,react_.useEffect)(()=>{
+        window.addEventListener("scroll", handleScroll);
+        return ()=>{
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+    const handleClick = ()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+    return /*#__PURE__*/ jsx_runtime_.jsx("button", {
+        onClick: handleClick,
+        className: (floatingButton_styles_module_default()).floatingButton,
+        style: isVisible ? {
+            transform: "translateY(0)",
+            opacity: 1,
+            pointerEvents: "all"
+        } : {
+            transform: "translateY(40px)",
+            opacity: 0,
+            pointerEvents: "none"
+        },
+        children: /*#__PURE__*/ jsx_runtime_.jsx(arrow, {})
+    });
+};
+/* harmony default export */ const floatingButton = (FloatingButton);
+
 // EXTERNAL MODULE: ./src/app/components/footer/styles.module.scss
-var footer_styles_module = __webpack_require__(5497);
+var footer_styles_module = __webpack_require__(1816);
 var footer_styles_module_default = /*#__PURE__*/__webpack_require__.n(footer_styles_module);
 ;// CONCATENATED MODULE: ./src/app/components/footer/index.tsx
 
@@ -2613,9 +2227,10 @@ const Footer = ()=>{
 /* harmony default export */ const footer = (Footer);
 
 // EXTERNAL MODULE: ./src/app/components/header/styles.module.scss
-var header_styles_module = __webpack_require__(6667);
+var header_styles_module = __webpack_require__(3886);
 var header_styles_module_default = /*#__PURE__*/__webpack_require__.n(header_styles_module);
 ;// CONCATENATED MODULE: ./src/app/components/header/index.tsx
+
 
 
 
@@ -2623,40 +2238,42 @@ const Header = ()=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("header", {
         className: (header_styles_module_default()).header,
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (header_styles_module_default()).headerBlock,
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("nav", {
-                    className: (header_styles_module_default()).links,
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                            className: (header_styles_module_default()).link,
-                            href: "#about-us",
-                            children: "О нас"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                            className: (header_styles_module_default()).link,
-                            href: "#info",
-                            children: "Информация о ВНЖ"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                            className: (header_styles_module_default()).link,
-                            href: "#prices",
-                            children: "Цены и услуги"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                            className: (header_styles_module_default()).link,
-                            href: "#feedbacks",
-                            children: "Отзывы"
-                        }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)((link_default()), {
-                            className: (header_styles_module_default()).link,
-                            href: "#contact",
-                            children: [
-                                "Связаться с нами",
-                                " "
-                            ]
-                        })
-                    ]
+            /*#__PURE__*/ jsx_runtime_.jsx(container, {
+                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: (header_styles_module_default()).headerBlock,
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("nav", {
+                        className: (header_styles_module_default()).links,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                className: (header_styles_module_default()).link,
+                                href: "#about-us",
+                                children: "О нас"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                className: (header_styles_module_default()).link,
+                                href: "#info",
+                                children: "Информация о ВНЖ"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                className: (header_styles_module_default()).link,
+                                href: "#prices",
+                                children: "Цены и услуги"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                className: (header_styles_module_default()).link,
+                                href: "#feedbacks",
+                                children: "Отзывы"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)((link_default()), {
+                                className: (header_styles_module_default()).link,
+                                href: "#contact",
+                                children: [
+                                    "Связаться с нами",
+                                    " "
+                                ]
+                            })
+                        ]
+                    })
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -2671,6 +2288,7 @@ const Header = ()=>{
 /* harmony default export */ const header = (Header);
 
 ;// CONCATENATED MODULE: ./src/app/page.tsx
+/* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
 
@@ -2684,6 +2302,19 @@ const Header = ()=>{
 
 
 function Home() {
+    const [width, setWidth] = (0,react_.useState)();
+    (0,react_.useEffect)(()=>{
+        if (false) {}
+    }, []);
+    (0,react_.useEffect)(()=>{
+        const handleResize = (event)=>{
+            setWidth(event.target.innerWidth);
+        };
+        window.addEventListener("resize", handleResize);
+        return ()=>{
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((noop_head_default()), {
@@ -2715,7 +2346,9 @@ function Home() {
                     /*#__PURE__*/ jsx_runtime_.jsx(floatingButton, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(hello, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(header, {}),
-                    /*#__PURE__*/ jsx_runtime_.jsx(aboutUs, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(aboutUs, {
+                        width: width
+                    }),
                     /*#__PURE__*/ jsx_runtime_.jsx(information, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(residentPermitTypes, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(prices, {}),
@@ -2728,6 +2361,339 @@ function Home() {
     });
 }
 
+
+/***/ }),
+
+/***/ 8383:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"aboutUs": "styles_aboutUs__syxd4",
+	"info": "styles_info__7_tho",
+	"hero": "styles_hero__TOfXT",
+	"image": "styles_image__32ECl",
+	"spain": "styles_spain__pqROr",
+	"personsGroup": "styles_personsGroup__qbpkv",
+	"dart": "styles_dart__sVeAS",
+	"hands": "styles_hands__RftXU",
+	"map": "styles_map__PDQKJ",
+	"first": "styles_first__EjA_5",
+	"spell": "styles_spell__LaMpr"
+};
+
+
+/***/ }),
+
+/***/ 9127:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"feedback": "styles_feedback__id7fE",
+	"feedbackText": "styles_feedbackText__vZoBQ",
+	"badge": "styles_badge__uMKLC",
+	"avatar": "styles_avatar__AcV9A"
+};
+
+
+/***/ }),
+
+/***/ 3972:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"feedbacks": "styles_feedbacks__UDYe1",
+	"allFeedbacks": "styles_allFeedbacks__qEr_N",
+	"feedbacksList": "styles_feedbacksList__UK2e8",
+	"first": "styles_first__nVaGL",
+	"open": "styles_open__XPeHZ",
+	"second": "styles_second__8VjRD",
+	"arrowBtn": "styles_arrowBtn__nM8uf",
+	"back": "styles_back__qiU1P",
+	"forward": "styles_forward__HD8Pk"
+};
+
+
+/***/ }),
+
+/***/ 7557:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"hello": "styles_hello__8Nr2Z",
+	"loadingAnimation": "styles_loadingAnimation__T2hsm",
+	"whatsappIcon": "styles_whatsappIcon__PV0uU",
+	"mailIcon": "styles_mailIcon__7pjRO",
+	"mailLink": "styles_mailLink__3uM_d",
+	"helloBlock": "styles_helloBlock__kObkl",
+	"helloContainer": "styles_helloContainer__K8Hr3",
+	"helloBG": "styles_helloBG__dPJo5",
+	"bgLoading": "styles_bgLoading__G7mau",
+	"buttons": "styles_buttons__aXKda",
+	"buttonsLoading": "styles_buttonsLoading__OPMyS",
+	"address": "styles_address__9yPRA",
+	"locationIcon": "styles_locationIcon__QPkNj",
+	"phones": "styles_phones__qi3uK",
+	"headerLoading": "styles_headerLoading__Qhepc",
+	"links": "styles_links__UcCWj",
+	"logo": "styles_logo__jrZuR",
+	"hero": "styles_hero__Oh8Ku",
+	"heroLoading": "styles_heroLoading__KMLsS",
+	"blur": "styles_blur__u4sH1"
+};
+
+
+/***/ }),
+
+/***/ 4311:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"information": "styles_information__R3HLf",
+	"a": "styles_a__dBvok",
+	"gradient": "styles_gradient__QEynK",
+	"blur": "styles_blur__RA48o",
+	"information__block": "styles_information__block__yyCoK",
+	"warning": "styles_warning__ZFpZ8",
+	"warning__block": "styles_warning__block__dFuvw"
+};
+
+
+/***/ }),
+
+/***/ 3115:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"makeOrder": "styles_makeOrder__VNttz",
+	"orderForm": "styles_orderForm__VZ6ta",
+	"visible": "styles_visible___1S4w",
+	"documentLink": "styles_documentLink__WApPF"
+};
+
+
+/***/ }),
+
+/***/ 6033:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"service": "styles_service__khX80",
+	"price": "styles_price__YM3Me"
+};
+
+
+/***/ }),
+
+/***/ 1482:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"services": "styles_services__s2GX1",
+	"nextSection": "styles_nextSection__IyLpg"
+};
+
+
+/***/ }),
+
+/***/ 5400:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"residentPermitTypes": "styles_residentPermitTypes__1QSwD",
+	"background": "styles_background__a3DEI",
+	"residentPermitTypes__block": "styles_residentPermitTypes__block__Eeefc",
+	"buttons": "styles_buttons__oYxq8",
+	"chosen": "styles_chosen__C7ZUd",
+	"description": "styles_description__Obuxz",
+	"article": "styles_article__k_S78",
+	"other": "styles_other__g37UO",
+	"nextSection": "styles_nextSection__5dtWg"
+};
+
+
+/***/ }),
+
+/***/ 5710:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"button": "styles_button__cSpVb",
+	"loading": "styles_loading__jw97X",
+	"visible": "styles_visible__4R_iU",
+	"ringLoader": "styles_ringLoader__2LmvO",
+	"ring-loader-animation": "styles_ring-loader-animation__feBMU"
+};
+
+
+/***/ }),
+
+/***/ 3646:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"container": "styles_container__8Kj2r"
+};
+
+
+/***/ }),
+
+/***/ 5813:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"bg": "styles_bg__ckzVn",
+	"open": "styles_open__QKRZh",
+	"document": "styles_document__pLXcR"
+};
+
+
+/***/ }),
+
+/***/ 4590:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"floatingButton": "styles_floatingButton__7fCdm",
+	"arrow": "styles_arrow__ZkXzh"
+};
+
+
+/***/ }),
+
+/***/ 1816:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"footer": "styles_footer__LeCZb",
+	"link": "styles_link__mfGzx",
+	"footerBlock": "styles_footerBlock__jBCo2",
+	"address": "styles_address__Pjxtk",
+	"contacts": "styles_contacts__js_FQ",
+	"telegram": "styles_telegram__bI6o7",
+	"telegramIcon": "styles_telegramIcon__zg3c1"
+};
+
+
+/***/ }),
+
+/***/ 3886:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"header": "styles_header__BRgIe",
+	"headerBlock": "styles_headerBlock__5jZsz",
+	"nextSectionBlock": "styles_nextSectionBlock__0rJAB",
+	"nextSection": "styles_nextSection__f3LQq",
+	"links": "styles_links__8c9mf",
+	"link": "styles_link__wdqVM"
+};
+
+
+/***/ }),
+
+/***/ 4053:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ RootLayout),
+/* harmony export */   metadata: () => (/* binding */ metadata)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5856);
+/* harmony import */ var next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5023);
+/* harmony import */ var _globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_globals_css__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+const metadata = {
+    title: "Immigration service",
+    description: "Осуществите свою мечту о жизни в Испании! Наша команда экспертов поможет вам сделать первый шаг к новому захватывающему приключению и найти свое счастье в этой удивительной стране!"
+};
+function RootLayout({ children }) {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("html", {
+        lang: "en",
+        children: [
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("head", {
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                        rel: "icon",
+                        href: "/favicon.ico",
+                        sizes: "any"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                        rel: "icon",
+                        href: "/favicon.svg",
+                        sizes: "any"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                        rel: "apple-touch-icon",
+                        href: "/favicon.ico",
+                        sizes: "any"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                        rel: "apple-touch-icon",
+                        href: "/favicon.svg",
+                        sizes: "any"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                        name: "yandex-verification",
+                        content: "0c579cef73d75c27"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("body", {
+                className: (next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_2___default().className),
+                children: children
+            })
+        ]
+    });
+}
+
+
+/***/ }),
+
+/***/ 8159:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
+/* harmony export */   __esModule: () => (/* binding */ __esModule),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1363);
+
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/home/yaroslav/projects/immigration-service/src/app/page.tsx`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__default__);
 
 /***/ }),
 
@@ -2769,7 +2735,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,299], () => (__webpack_exec__(1754)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,237], () => (__webpack_exec__(1754)));
 module.exports = __webpack_exports__;
 
 })();

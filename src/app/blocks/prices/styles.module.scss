@@ -26,3 +26,36 @@
 	width: 100%;
 	height: 35px;
 }
+
+@media (max-width: 1024px) {
+	.services {
+		padding-bottom: 35px;
+
+		h2 {
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			margin-bottom: 45px;
+		}
+
+		p {
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 25px; /* 125% */
+			letter-spacing: 0.2px;
+		}
+	}
+}
+
+@media (max-width: 430px) {
+	.services {
+		padding-bottom: 35px;
+
+		h2 {
+			font-size: 20px;
+			line-height: normal;
+			margin-bottom: 15px;
+		}
+	}
+}

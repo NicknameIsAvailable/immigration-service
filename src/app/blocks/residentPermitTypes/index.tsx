@@ -6,7 +6,7 @@ import styles from './styles.module.scss'
 
 const ResidentPermitTypes = () => {
 	const [chosenPermit, setChosenPermit] = useState(0)
- 
+
 	const [offset, setOffset] = useState(0)
 
 	const handleScroll = () => {
@@ -36,7 +36,11 @@ const ResidentPermitTypes = () => {
 						указанного срока резидент может продлить свой статус сразу
 						на&nbsp;2&nbsp;года.
 						<br />
+						<br />
+						<br />
 						<b> Преимущества: </b>
+						<br />
+						<br />
 						<ol>
 							<li>
 								Испанский резидент имеет право находиться на&nbsp;территории
@@ -91,7 +95,11 @@ const ResidentPermitTypes = () => {
 						можно продлить еще на&nbsp;5&nbsp;лет. Впоследствии иностранец имеет
 						возможность получить ПМЖ и&nbsp;оформить гражданство Испании.
 						<br />
+						<br />
+						<br />
 						<b>Возможности: </b>
+						<br />
+						<br />
 						<ol>
 							<li>
 								Проживание, а&nbsp;также осуществление профессиональной и
@@ -139,7 +147,11 @@ const ResidentPermitTypes = () => {
 						визу и&nbsp;оформить на&nbsp;ее&nbsp;основании ВНЖ. Срок оформления
 						документа занимает от&nbsp;2&nbsp;до&nbsp;4&nbsp;месяцев.
 						<br />
+						<br />
+						<br />
 						<b>Преимущества: </b>
+						<br />
+						<br />
 						<ol>
 							<li>
 								Законное проживание в&nbsp;Испании в&nbsp;течение срока
@@ -171,7 +183,11 @@ const ResidentPermitTypes = () => {
 						Испании.При положительном решении ВНЖ цифрового кочевника выдается
 						на&nbsp;3&nbsp;года.
 						<br />
+						<br />
+						<br />
 						<b>Требования:</b>
+						<br />
+						<br />
 						<ol>
 							<li>
 								документальное подтверждение университетского образования в
@@ -204,11 +220,12 @@ const ResidentPermitTypes = () => {
 
 	return (
 		<section className={styles.residentPermitTypes}>
-			<div className={styles.background} 
-			// style={{
-			// 		transform: `translateY(${offset * 0.3}px)`,
-			// 	}}
-				/>
+			<div
+				className={styles.background}
+				// style={{
+				// 		transform: `translateY(${offset * 0.3}px)`,
+				// 	}}
+			/>
 
 			<Container>
 				<div className={styles.residentPermitTypes__block}>
@@ -226,10 +243,8 @@ const ResidentPermitTypes = () => {
 			</Container>
 			<div className={styles.description}>
 				<Container>
-					<div
-						className={styles.article}
-					>
-							{residentPermitTypes[0].description}
+					<div className={styles.article}>
+						{residentPermitTypes[0].description}
 					</div>
 					{residentPermitTypes.map((item, index) => (
 						<div
