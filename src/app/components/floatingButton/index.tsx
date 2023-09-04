@@ -1,10 +1,10 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Arrow from '../../../../public/icons/arrow'
 import styles from './styles.module.scss'
 
 const FloatingButton = () => {
-	const arrow = '../../../../public/Mask group.png'
 	const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
@@ -33,7 +33,7 @@ const FloatingButton = () => {
 					: { transform: 'translateY(40px)', opacity: 0, pointerEvents: 'none' }
 			}
 		>
-			<div className={styles.arrow} />
+			<Arrow/>
 		</button>
 	)
 }

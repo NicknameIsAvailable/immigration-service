@@ -48,9 +48,13 @@
 	}
 
 	.helloBlock {
+		width: 100vw;
 		top: 0;
 		left: 0;
 		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.helloContainer {
@@ -231,5 +235,47 @@
 		filter: blur(129.5px);
 		width: 100%;
 		height: 100%;
+	}
+}
+
+@media (max-width: 430px) {
+	.helloBlock {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.phones {
+		p {
+			display: none;
+		}
+	}
+
+	.mailLink {
+		p {
+			display: none;
+		}
+	}
+
+	.whatsappIcon {
+		width: 28px;
+		height: 28px;
+	}
+
+	.mailIcon {
+		width: 28px;
+		height: 28px;
+	}
+
+	.hero {
+		border: red 1px solid;
+		width: 100%;
+
+		h1 {
+			font-size: 30px;
+		}
+
+		h3 {
+			font-size: 15px;
+		}
 	}
 }

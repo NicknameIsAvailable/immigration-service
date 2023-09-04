@@ -1,9 +1,11 @@
 import Link from 'next/link'
+import Container from '../container'
 import styles from './styles.module.scss'
 
 const Header = () => {
 	return (
 		<header className={styles.header}>
+			<Container>
 			<div className={styles.headerBlock}>
 				<nav className={styles.links}>
 					<Link className={styles.link} href='#about-us'>
@@ -24,6 +26,7 @@ const Header = () => {
 				</nav>
 			</div>
 
+			</Container>
 			<div className={styles.nextSectionBlock}>
 				<div className={styles.nextSection} />
 			</div>

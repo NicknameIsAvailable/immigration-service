@@ -92,3 +92,36 @@
 	border-radius: 50%;
 	animation: ring-loader-animation 1s linear infinite;
 }
+
+@media (max-width: 2800px) {
+	.button { 
+		max-width: 520px;
+		padding: 12px 90px;
+
+		p {
+			font-size: 30px;
+		}	
+	}
+}
+
+@media (max-width: 1024px) {
+	.button { 
+		max-width: 360px;
+		padding: 12px 60px;
+
+		p {
+			font-size: 30px;
+		}	
+	}
+}
+
+@media (max-width: 430px) {
+	.button { 
+		max-width: 360px;
+		padding: 10px 50px;
+
+		p {
+			font-size: 20px;
+		}
+	}
+}

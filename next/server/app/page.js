@@ -373,34 +373,34 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 7083:
+/***/ 7208:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6505, 23))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6505, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23))
 
 /***/ }),
 
-/***/ 1360:
+/***/ 4433:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 188));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9653));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6230));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 954, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4759));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1719))
+
+/***/ }),
+
+/***/ 7283:
 /***/ (() => {
 
 
-
-/***/ }),
-
-/***/ 4229:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1719));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 954, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 188));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4759));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9653));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6230))
 
 /***/ }),
 
@@ -1013,37 +1013,22 @@ const Hello = ()=>{
                                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                         children: "+34 685 54 27 31"
                                                     }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("svg", {
-                                                        width: "24",
-                                                        height: "24",
-                                                        viewBox: "0 0 24 24",
-                                                        fill: "none",
-                                                        xmlns: "http://www.w3.org/2000/svg",
-                                                        children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
-                                                            d: "M12.0117 2C6.50572 2 2.02348 6.47837 2.02148 11.9844C2.02048 13.7444 2.48147 15.4626 3.35547 16.9766L2 22L7.23242 20.7637C8.69142 21.5597 10.3339 21.9775 12.0059 21.9785H12.0098C17.5148 21.9785 21.995 17.4991 21.998 11.9941C22 9.32514 20.9622 6.81573 19.0762 4.92773C17.1902 3.04073 14.6837 2.001 12.0117 2ZM12.0098 4C14.1458 4.001 16.1531 4.8338 17.6621 6.3418C19.1711 7.8518 20 9.85819 19.998 11.9922C19.996 16.3962 16.4138 19.9785 12.0078 19.9785C10.6748 19.9775 9.35441 19.6428 8.19141 19.0078L7.51758 18.6406L6.77344 18.8164L4.80469 19.2812L5.28516 17.4961L5.50195 16.6953L5.08789 15.9766C4.38989 14.7686 4.02048 13.3874 4.02148 11.9844C4.02348 7.58238 7.60677 4 12.0098 4ZM8.47656 7.375C8.30956 7.375 8.03955 7.4375 7.81055 7.6875C7.58155 7.9365 6.93555 8.53958 6.93555 9.76758C6.93555 10.9956 7.83008 12.1826 7.95508 12.3496C8.07908 12.5156 9.68175 15.1152 12.2188 16.1152C14.3268 16.9462 14.7549 16.7822 15.2129 16.7402C15.6709 16.6992 16.6904 16.1377 16.8984 15.5547C17.1064 14.9717 17.1069 14.4702 17.0449 14.3672C16.9829 14.2632 16.8164 14.2012 16.5664 14.0762C16.3174 13.9512 15.0903 13.3486 14.8613 13.2656C14.6323 13.1826 14.4648 13.1406 14.2988 13.3906C14.1328 13.6406 13.6558 14.2012 13.5098 14.3672C13.3638 14.5342 13.2188 14.5566 12.9688 14.4316C12.7188 14.3056 11.9149 14.0414 10.9609 13.1914C10.2189 12.5304 9.71827 11.7148 9.57227 11.4648C9.42727 11.2158 9.55859 11.0791 9.68359 10.9551C9.79559 10.8431 9.93164 10.6636 10.0566 10.5176C10.1806 10.3716 10.2236 10.2676 10.3066 10.1016C10.3896 9.93556 10.3472 9.78906 10.2852 9.66406C10.2232 9.53906 9.73763 8.3065 9.51562 7.8125C9.32862 7.3975 9.13113 7.38786 8.95312 7.38086C8.80813 7.37486 8.64256 7.375 8.47656 7.375Z",
-                                                            fill: "white"
-                                                        })
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: (styles_module_default()).whatsappIcon
                                                     })
                                                 ]
                                             }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                                                 href: "mailto:immigrationservice.spain@gmail.com",
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                    children: [
-                                                        "immigrationservice.spain@gmail.com",
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("svg", {
-                                                            width: "27",
-                                                            height: "19",
-                                                            viewBox: "0 0 27 19",
-                                                            fill: "none",
-                                                            xmlns: "http://www.w3.org/2000/svg",
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
-                                                                d: "M23.625 0H3.375C1.51116 0 0 1.41787 0 3.16667V15.8333C0 17.5821 1.51116 19 3.375 19H23.625C25.4888 19 27 17.5821 27 15.8333V3.16667C27 1.41787 25.4888 0 23.625 0ZM18.0698 8.4501L25.2136 2.70587C25.2631 2.8543 25.3125 3.00274 25.3125 3.16667V15.8333C25.3125 15.9431 25.268 16.0406 25.2449 16.1441L18.0698 8.4501ZM23.625 1.58333C23.7371 1.58333 23.8359 1.62356 23.9414 1.64365L13.5 10.0412L3.05859 1.64365C3.16406 1.62356 3.26294 1.58333 3.375 1.58333H23.625ZM1.75426 16.1426C1.73116 16.039 1.6875 15.9431 1.6875 15.8333V3.16667C1.6875 3.00274 1.73776 2.8543 1.78722 2.70587L8.92862 8.44857L1.75426 16.1426ZM3.375 17.4167C3.20446 17.4167 3.04952 17.3703 2.8938 17.3254L10.2107 9.47986L12.9512 11.6832C13.1086 11.8116 13.3047 11.875 13.5 11.875C13.6953 11.875 13.8914 11.8116 14.0488 11.6833L16.7893 9.47991L24.1062 17.3255C23.9513 17.3703 23.7964 17.4167 23.625 17.4167H3.375Z",
-                                                                fill: "white"
-                                                            })
-                                                        })
-                                                    ]
-                                                })
+                                                className: (styles_module_default()).mailLink,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: "immigrationservice.spain@gmail.com"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: (styles_module_default()).mailIcon
+                                                    })
+                                                ]
                                             })
                                         ]
                                     })
@@ -1056,7 +1041,7 @@ const Hello = ()=>{
                                         className: (styles_module_default()).blur
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                        children: "Осуществите свою мечту о жизни в Испании "
+                                        children: "Осуществите свою мечту о\xa0жизни в\xa0Испании"
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("h3", {
                                         children: "Наша команда экспертов поможет вам сделать первый шаг к\xa0новому захватывающему приключению и\xa0найти свое счастье в\xa0этой удивительной стране!"
@@ -1150,8 +1135,20 @@ const Document = ({ open, setOpen })=>{
                     /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ol", {
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                children: "Согласие дается на обработку одной, нескольких или всех категорий персональных данных, не являющихся специальными или биометрическими, предоставляемых мною, которые могут включать: - Имя; - Фамилия; - E-mail; - Телефон; - Комментарий."
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
+                                children: [
+                                    "Согласие дается на обработку одной, нескольких или всех категорий персональных данных, не являющихся специальными или биометрическими, предоставляемых мною, которые могут включать: ",
+                                    /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                    "- Имя; ",
+                                    /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                    "- Фамилия; ",
+                                    /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                    "- E-mail; ",
+                                    /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                    "- Телефон; ",
+                                    /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                    "- Комментарий."
+                                ]
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
@@ -1214,12 +1211,11 @@ const MakeOrder = ()=>{
     const sendForm = async ()=>{
         try {
             setLoading(true);
-            const data = await axios/* default */.Z.post(`http://95.163.241.37:8080/api/get-in-touch`, formParams);
+            const data = await axios/* default */.Z.post(`https://immigration-service.es/api/get-in-touch`, formParams);
             setIsSended(true);
             setLoading(false);
         } catch (error) {
             setLoading(false);
-            console.log(error);
         }
     };
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -1366,7 +1362,6 @@ __webpack_require__.r(__webpack_exports__);
 const ResidentPermitTypes = ()=>{
     const [chosenPermit, setChosenPermit] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0);
     const [offset, setOffset] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0);
-    console.log(offset);
     const handleScroll = ()=>{
         setOffset(window.pageYOffset);
     };
@@ -1650,11 +1645,8 @@ const FloatingButton = ()=>{
     const arrow = "../../../../public/Mask group.png";
     const [isVisible, setIsVisible] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const handleScroll = ()=>{
-        if (window.scrollY > 0) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        setIsVisible(scrollTop > 500);
     };
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         window.addEventListener("scroll", handleScroll);
@@ -1662,21 +1654,21 @@ const FloatingButton = ()=>{
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
-    const scrollToTop = ()=>{
+    const handleClick = ()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
     };
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-        onClick: scrollToTop,
+        onClick: handleClick,
         className: (_styles_module_scss__WEBPACK_IMPORTED_MODULE_2___default().floatingButton),
         style: isVisible ? {
-            bottom: "40px",
+            transform: "translateY(0)",
             opacity: 1,
             pointerEvents: "all"
         } : {
-            bottom: "80px",
+            transform: "translateY(40px)",
             opacity: 0,
             pointerEvents: "none"
         },
@@ -1749,6 +1741,9 @@ module.exports = {
 module.exports = {
 	"hello": "styles_hello__8Nr2Z",
 	"loadingAnimation": "styles_loadingAnimation__T2hsm",
+	"whatsappIcon": "styles_whatsappIcon__PV0uU",
+	"mailIcon": "styles_mailIcon__7pjRO",
+	"mailLink": "styles_mailLink__3uM_d",
 	"helloBlock": "styles_helloBlock__kObkl",
 	"helloContainer": "styles_helloContainer__K8Hr3",
 	"helloBG": "styles_helloBG__dPJo5",
@@ -1911,6 +1906,7 @@ module.exports = {
 // Exports
 module.exports = {
 	"footer": "styles_footer__LeCZb",
+	"link": "styles_link__mfGzx",
 	"footerBlock": "styles_footerBlock__jBCo2",
 	"address": "styles_address__Pjxtk",
 	"contacts": "styles_contacts__js_FQ",
@@ -2228,10 +2224,13 @@ const Information = ()=>{
                                     href: "https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074",
                                     children: [
                                         " ",
-                                        "\xabО\xa0поддержке предпринимателей",
-                                        " ",
-                                        "и\xa0их\xa0интернационализации\xbb"
+                                        "\xabО\xa0поддержке предпринимателей"
                                     ]
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                    className: (information_styles_module_default()).a,
+                                    href: "https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074",
+                                    children: "и\xa0их\xa0интернационализации\xbb"
                                 }),
                                 ". Иностранцам для пересечения границы и\xa0последующего оформления ВНЖ необходимо получить национальную визу категории D.\xa0Законодательством предусмотрены несколько механизмов интеграции мигрантов в социально-экономическую жизнь страны, которые далее в\xa0статье рассмотрены более подробно."
                             ]
@@ -2496,13 +2495,16 @@ const Footer = ()=>{
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: (footer_styles_module_default()).address,
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    className: (footer_styles_module_default()).link,
                                     children: "29660"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    className: (footer_styles_module_default()).link,
                                     children: "Marbella (Malaga)"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    className: (footer_styles_module_default()).link,
                                     children: "Calle Ricardo Soriano 31, 1A"
                                 })
                             ]
@@ -2529,7 +2531,8 @@ const Footer = ()=>{
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             href: "mailto:immigrationservice.spain@gmail.com",
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (footer_styles_module_default()).link,
                                                 children: "immigrationservice.spain@gmail.com"
                                             })
                                         })
@@ -2552,10 +2555,12 @@ const Footer = ()=>{
                                                 fill: "white"
                                             })
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            className: (footer_styles_module_default()).link,
                                             children: "+34 685 54 27 31"
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            className: (footer_styles_module_default()).link,
                                             children: "+34 633 51 02 26"
                                         })
                                     ]

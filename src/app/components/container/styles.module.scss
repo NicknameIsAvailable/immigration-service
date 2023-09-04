@@ -1,4 +1,26 @@
 .container {
-	margin-left: 10%;
-	margin-right: 10%;
+	flex: 1;
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;	
+	transition: 0.3s ease-in-out;
 }
+
+@media (max-width: 2800px) {
+	.container {
+		max-width: 2400px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		max-width: 940px;
+	}
+}
+
+@media (max-width: 430px) {
+	.container {
+		max-width: 390px;
+	}
+}
+
