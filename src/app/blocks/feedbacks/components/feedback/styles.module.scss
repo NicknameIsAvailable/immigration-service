@@ -12,6 +12,17 @@
 	line-height: 34px; /* 147.826% */
 	letter-spacing: -0.23px;
 	transition: 0.3s ease-in-out;
+	position: absolute;
+	filter: blur(10px);
+	opacity: 0;
+	pointer-events: none;
+
+	&.visible { 
+		opacity: 1;
+		filter: blur(0);
+		position: relative;
+		pointer-events: all;
+	}
 
 	&:hover {
 		transform: scale(1.01);
@@ -50,4 +61,43 @@
 	width: 120px;
 	height: 120px;
 	background-image: url('../../../../../../public/anonymous.png');
+}
+
+@media (max-width: 1024px) {
+	.feedback {
+		h2 {
+			 font-size: 20px;
+		}
+
+		.feedbackText { 
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 430px) { 
+	.feedback {
+		min-height: 70vh;
+		width: 100%;
+
+		.avatar {
+			background-size: cover;
+			width: 80px;
+			height: 80px;
+		}
+
+		h3 {
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 35.5px; /* 236.667% */
+			letter-spacing: -0.15px;
+		}
+
+		.feedbackText {
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 20px;
+			letter-spacing: -0.15px;
+		 }
+	}
 }

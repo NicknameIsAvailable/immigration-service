@@ -139,8 +139,39 @@
 	height: 35px;
 }
 
+@media (max-width: 1024px) {
+	.residentPermitTypes {
+		.buttons {
+			font-size: 20px;
+			padding-top: 35px;
+			padding-bottom: 0;
+			margin-bottom: 45px;
+			justify-content: center;
+		}
+
+		p { 
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 25px; /* 125% */
+		}
+	}
+}
+
 @media (max-width: 430px) {
 	.residentPermitTypes {
+		margin-top: -20px;
+		padding-top: 60px;
+		padding-bottom: 40px;
+
+		.buttons {
+			font-size: 20px;
+			padding-top: 35px;
+			padding-bottom: 0;
+			margin-bottom: 65px;
+			justify-content: flex-start;
+		}
+
 		button {
 			padding: 3px 12px;
 			font-size: 15px;
@@ -166,6 +197,40 @@
 			font-size: 15px;
 			font-weight: 400;
 			line-height: 20px; /* 133.333% */
+		}
+	}
+
+	.goUp {
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 40px;
+		width: 40px;
+		border-radius: 100%;
+		cursor: pointer;
+		background: transparent;
+		border: none;
+		transition: 0.3s ease-in-out;
+
+		svg {
+			transform: translateY(5px);
+			transition: 0.3s ease-in-out;
+		}
+
+		&:hover { 
+			background: rgba(255, 255, 255, 0.3);
+			filter: brightness(1.25);
+		}
+
+		&:active {
+			filter: brightness(1.1);
+		}
+
+		&:hover svg {
+			transform: translateY(0);
 		}
 	}
 }

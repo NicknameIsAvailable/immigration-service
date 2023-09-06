@@ -2,9 +2,10 @@
 
 import Container from '@/app/components/container'
 import { useEffect, useState } from 'react'
+import Arrow from '../../../../public/icons/arrow'
 import styles from './styles.module.scss'
 
-const ResidentPermitTypes = () => {
+const ResidentPermitTypes = ({width}: {width: number | undefined}) => {
 	const [chosenPermit, setChosenPermit] = useState(0)
 
 	const [offset, setOffset] = useState(0)
@@ -219,7 +220,7 @@ const ResidentPermitTypes = () => {
 	]
 
 	return (
-		<section className={styles.residentPermitTypes}>
+		<section id='top' className={styles.residentPermitTypes}>
 			<div
 				className={styles.background}
 				// style={{
@@ -257,6 +258,14 @@ const ResidentPermitTypes = () => {
 					))}
 				</Container>
 			</div>
+			{width && width <= 430 
+			? <a href="#top">
+					<button className={styles.goUp}>
+						<Arrow/>
+					</button>
+				</a>  
+				: ''
+}
 			<div className={styles.nextSection} />
 		</section>
 	)

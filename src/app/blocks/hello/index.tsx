@@ -51,12 +51,12 @@ const Hello = () => {
 
 						<div className={styles.hero}>
 							<div className={styles.blur} />
-							<h1>Осуществите свою мечту о&nbsp;жизни в&nbsp;Испании</h1>
-							<h3>
+							<h1 className={styles.title}>Осуществите свою мечту о&nbsp;жизни в&nbsp;Испании</h1>
+							<p className={styles.heroText}>
 								Наша команда экспертов поможет вам сделать первый шаг
 								к&nbsp;новому захватывающему приключению и&nbsp;найти свое
 								счастье в&nbsp;этой удивительной стране!
-							</h3>
+							</p>
 						</div>
 
 						<div className={styles.buttons}>

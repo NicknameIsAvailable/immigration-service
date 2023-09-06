@@ -11,8 +11,6 @@
 		font-size: 12px;
 		font-style: normal;
 		font-weight: 400;
-		line-height: normal;
-		letter-spacing: 0.12px;
 	}
 
 	.link {
@@ -76,8 +74,66 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.footer {
+		svg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: scale(0.8) !important;
+		}
+
+		.phones {
+			justify-content: space-between;
+			flex: 1;
+			width: 100%;
+			display: flex;
+		}
+
+		p {
+			 font-size: 15px !important;
+		}
+	}
+}
+
 @media (max-width: 430px) {
-	.address {
+	.footer {
+		padding-top: 30px;
+
+		svg {
+			transform: scale(0.8) !important;
+		}
+
+		p {
+			text-align: left;
+			font-size: 15px !important
+		}
+	}
+
+	.phones {
+		gap: 20px;
+		width: 100%;
 		display: flex;
+	}
+
+	.smallText {
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+
+	.footerBlock { 
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 0;
+		justify-content: center;
+		flex-direction: column;
+
+		.address {
+			width: 100%;
+			gap: 5px;
+			display: flex;
+		}
 	}
 }

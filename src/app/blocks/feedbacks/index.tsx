@@ -7,7 +7,9 @@ import ArrowRightIcon from '../../../../public/icons/arrowRight'
 import Feedback from './components/feedback'
 import styles from './styles.module.scss'
 
-const Feedbacks = () => {
+const Feedbacks = ({width} : {width: number | undefined}) => {
+	const visibleFeedbackCount = width && width <= 430 ? 1 : width && width <= 1024 ? 2 : 3
+	const [visibleCount, setVisibleCount] = useState<number>(0)
 	const feedbacks = [
 		{
 			text: (
@@ -96,20 +98,15 @@ const Feedbacks = () => {
 		},
 	]
 
-	const [firstVisible, setFirstVisible] = useState(true)
-	const [secondVisible, setSecondVisible] = useState(false)
-
 	const handleClickNext = () => {
-		if (!secondVisible) {
-			setFirstVisible(false)
-			setSecondVisible(true)
+		if (visibleCount !== feedbacks.length - visibleFeedbackCount) {
+			setVisibleCount(visibleCount + visibleFeedbackCount)
 		}
 	}
 
 	const handleClickPrev = () => {
-		if (!firstVisible) {
-			setFirstVisible(true)
-			setSecondVisible(false)
+		if (visibleCount >= 1) {
+			setVisibleCount(visibleCount - visibleFeedbackCount)
 		}
 	}
 
@@ -119,7 +116,7 @@ const Feedbacks = () => {
 				onClick={handleClickPrev}
 				className={styles.arrowBtn}
 				id={styles.back}
-				disabled={firstVisible}
+				disabled={visibleCount === 0}
 			>
 				<ArrowLeftIcon />
 			</button>
@@ -127,34 +124,18 @@ const Feedbacks = () => {
 				onClick={handleClickNext}
 				className={styles.arrowBtn}
 				id={styles.forward}
-				disabled={secondVisible}
+				disabled={visibleCount === feedbacks.length - visibleFeedbackCount}
 			>
 				<ArrowRightIcon />
 			</button>
 			<Container>
 				<h2>Отзывы</h2>
 				<p>У нас более 100 довольных клиентов и их число постоянно растет!</p>
-				<div className={styles.allFeedbacks}>
-					<div
-						className={`${styles.feedbacksList} ${
-							firstVisible ? styles.open : ''
-						}`}
-						id={styles.first}
-					>
-						{feedbacks.slice(0, 3).map(item => (
-							<Feedback item={item} />
-						))}
-					</div>
-					<div
-						className={`${styles.feedbacksList} ${
-							secondVisible ? styles.open : ''
-						}`}
-						id={styles.second}
-					>
-						{feedbacks.slice(3, 6).map(item => (
-							<Feedback item={item} />
-						))}
-					</div>
+				<div className={styles.feedbacksList} 
+				>
+					{
+						feedbacks.map((feedback, index) => <Feedback item={feedback} visibleCount={visibleCount} visibleFeedbackCount={visibleFeedbackCount} index={index}/>)
+					}
 				</div>
 			</Container>
 		</div>

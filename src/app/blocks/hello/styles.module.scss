@@ -23,6 +23,7 @@
 	.whatsappIcon {
 		width: 40px;
 		height: 40px;
+		background-position: center;
 		background-repeat: no-repeat;
 		-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -34,6 +35,7 @@
 	.mailIcon {
 		width: 40px;
 		height: 40px;
+		background-position: center;
 		background-repeat: no-repeat;
 		-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -58,6 +60,9 @@
 	}
 
 	.helloContainer {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 		height: 100vh;
 		position: relative;
 	}
@@ -218,7 +223,7 @@
 			line-height: normal;
 		}
 
-		h3 {
+		p {
 			z-index: 2;
 			font-size: 40px;
 			font-style: normal;
@@ -238,44 +243,110 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.helloBlock { 
+		width: 90%;
+
+		.logo { 
+			width: 140px;
+		}
+
+		.links { 
+			font-size: 20px;
+		}
+
+		.whatsappIcon { 
+			width: 20px;
+			height: 20px;
+		}
+
+		.mailIcon { 
+			width: 20px;
+			height: 20px;
+		}
+
+		.hero { 
+			width: 100%;
+
+			h1 { 
+				font-size: 40px;
+				font-weight: 600;
+				line-height: normal;
+			}
+
+			p { 
+				font-size: 30px;
+			}	
+		}
+	}
+}
+
 @media (max-width: 430px) {
 	.helloBlock {
-		opacity: 0;
-		pointer-events: none;
-	}
+		width: 95%;
 
-	.phones {
-		p {
-			display: none;
-		}
-	}
+		.logo {
+			margin-top: -50px;
+			height: 112px;
+			width: 112px;
 
-	.mailLink {
-		p {
-			display: none;
-		}
-	}
-
-	.whatsappIcon {
-		width: 28px;
-		height: 28px;
-	}
-
-	.mailIcon {
-		width: 28px;
-		height: 28px;
-	}
-
-	.hero {
-		border: red 1px solid;
-		width: 100%;
-
-		h1 {
-			font-size: 30px;
+			svg {
+				width: 112px;
+			}
 		}
 
-		h3 {
+		.hero { 
+			margin-top: 100px;
+		}
+
+		.phones {
+			p {
+				display: none;
+			}
+		}
+
+		.mailLink {
+			p {
+				display: none;
+			}
+		}
+
+		.whatsappIcon {
+			width: 28px;
+			height: 28px;
+		}
+
+		.mailIcon {
+			width: 28px;
+			height: 28px;
+		}
+
+		.title {
+			font-size: 30px !important;
+		}
+	
+		.address {
+			color: #FFF;
+			text-align: right;
+			font-size: 15px !important;
+			font-style: normal;
+			letter-spacing: 0.15px;
+		}
+
+		.heroText {
 			font-size: 15px;
+		}
+
+		.hero {
+			width: 100%;
+
+			h1 { 
+				font-size: 30px !important;
+			}
+
+			p {
+				font-size: 15px !important;
+			}
 		}
 	}
 }

@@ -9,7 +9,7 @@ const FloatingButton = () => {
 
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    setIsVisible(scrollTop > 500);
+    setIsVisible(scrollTop > 500 && scrollTop < 8000);
   };
 
   useEffect(() => {

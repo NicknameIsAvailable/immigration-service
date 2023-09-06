@@ -44,9 +44,9 @@ export default function Home() {
 				<Header />
 				<AboutUs width={width} />
 				<Information />
-				<ResidentPermitTypes />
+				<ResidentPermitTypes width={width} />
 				<Prices />
-				<Feedbacks />
+				<Feedbacks width={width}/>
 				<MakeOrder />
 				<Footer width={width} />
 			</main>
