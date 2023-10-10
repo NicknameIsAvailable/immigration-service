@@ -6,11 +6,11 @@ import styles from './styles.module.scss'
 
 const Footer = ({ width }: { width: number | undefined }) => {
 	return (
-		<footer className={styles.footer}>
+		<footer className={styles.footer} id='footer'>
 			<Container>
 				<div className={styles.footerBlock}>
 					<div className={styles.address}>
-						{width && width <= 430 ? 
+						{width && width <= 640 ? 
 							<p className={styles.link}>29660 Marbella (Malaga) Calle Ricardo Soriano 31, 1A</p>
 							: 
 							<>
@@ -23,15 +23,15 @@ const Footer = ({ width }: { width: number | undefined }) => {
 
 					<div className={styles.contacts}>
 						{
-							width && width <= 430 ?
+							width && width <= 640 ?
 								<>
-						<div className={width && width <= 430 ? styles.phones : ''}>
+						<div className={width && width <= 640 ? styles.phones : ''}>
 							<WhatsappIcon/>
 							<p className={styles.link}>+34 685 54 27 31</p> 
 							<p className={styles.link}>+34 633 51 02 26</p>
 						</div>
 
-						<div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
+						<div style={{ display: 'flex', alignItems: 'center' }}>
 							<a href='mailto:immigrationservice.spain@gmail.com' style={{display: 'flex', alignItems: 'center', gap: 20}}>
 							<MailIcon/>
 								<p className={styles.link} style={{ marginTop: 10}}>
@@ -65,7 +65,7 @@ const Footer = ({ width }: { width: number | undefined }) => {
 							</>
 						}
 					</div>
-					{width && width > 430 ? 
+					{width && width > 640 ? 
 						<div className={styles.telegram}>
 						<a href='https://t.me/ImmigrationServiceEs' target='_blank'>
 							<TelegramIcon width={width} styles={styles}/>
@@ -75,11 +75,13 @@ const Footer = ({ width }: { width: number | undefined }) => {
 				}
 				</div>	
 			</Container>
-			<p className={styles.smallText}>
-				Информационный портал "Immigration service". Копирование и использование
-				материалов портала без письменного согласия автора является нарушением
-				авторских прав и преследуется законом
-			</p>
+			<Container>
+				<p className={styles.smallText}>
+					Информационный портал "Immigration service". Копирование и использование
+					материалов портала без письменного согласия автора является нарушением
+					авторских прав и преследуется законом
+				</p>
+			</Container>
 		</footer>
 	)
 }

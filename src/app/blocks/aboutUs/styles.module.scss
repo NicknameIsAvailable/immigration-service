@@ -1,7 +1,8 @@
 .aboutUs {
+	width: 100vw;
 	margin-top: 30px;
 	border-top: 1px solid white;
-	border-radius: 35px 35px 0px 0px;
+	border-radius: 35px 35px 0 0;
 	background: #fff;
 
 	.info {
@@ -62,6 +63,10 @@
 		background-image: url('../../../../public/map.png');
 	}
 
+	.image {
+		margin-top: 40px;
+	}
+
 	h2 {
 		color: #0b2c7f;
 		font-size: 40px;
@@ -106,16 +111,22 @@
 	}
 }
 
-@media (min-width: 431px) {
+@media (min-width: 641px) {
 	.info {
 		margin-top: 125px;
 		margin-bottom: 25px;
 	}
 }
 
-@media (max-width: 430px) {
+@media (max-width: 640px) {
 	#first {
 		margin-top: 40px;
+	}
+
+	.phones {
+		p {
+			display: none;
+		}
 	}
 
 	.info {

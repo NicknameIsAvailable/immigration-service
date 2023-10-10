@@ -7,8 +7,8 @@ import ArrowRightIcon from '../../../../public/icons/arrowRight'
 import Feedback from './components/feedback'
 import styles from './styles.module.scss'
 
-const Feedbacks = ({width} : {width: number | undefined}) => {
-	const visibleFeedbackCount = width && width <= 430 ? 1 : width && width <= 1024 ? 2 : 3
+const Feedbacks = ({width, height} : {width: number | undefined, height: number | undefined}) => {
+	const visibleFeedbackCount = width && width <= 640 ||height && height <= 480 ? 1 : width && width <= 1024 ? 2 : 3
 	const [visibleCount, setVisibleCount] = useState<number>(0)
 	const feedbacks = [
 		{
@@ -33,14 +33,14 @@ const Feedbacks = ({width} : {width: number | undefined}) => {
 			text: (
 				<>
 					Я&nbsp;хотел&nbsp;бы поделиться своим восторгом от&nbsp;сотрудничества
-					с&nbsp;командой Lion and Unicorn в&nbsp;оформлении ВНЖ в&nbsp;Испанию.
+					с&nbsp;командой Immigration Service в&nbsp;оформлении ВНЖ в&nbsp;Испанию.
 					Они проявили профессионализм, предоставив мне всю необходимую помощь
 					и&nbsp;поддержку на&nbsp;каждом этапе процесса. Специалисты компании
 					помогли мне найти оптимальный маршрут для получения ВНЖ, предоставив
 					детальные консультации и&nbsp;рекомендации. Они были терпеливыми,
 					отзывчивыми и&nbsp;всегда готовы ответить на&nbsp;все мои вопросы, что
 					сделало процесс намного более комфортным и&nbsp;безопасным для меня.
-					Благодаря усилиям команды Lion and Unicorn, я&nbsp;успешно получил ВНЖ
+					Благодаря усилиям команды Immigration Service, я&nbsp;успешно получил ВНЖ
 					в&nbsp;Испании и&nbsp;теперь могу начать новую главу своей жизни.
 				</>
 			),

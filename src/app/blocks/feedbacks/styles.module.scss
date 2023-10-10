@@ -1,4 +1,5 @@
 .feedbacks {
+	width: 100vw;
 	position: relative;
 	padding-top: 5px;
 	padding-bottom: 40px;
@@ -13,10 +14,7 @@
 		opacity: 0;
 		pointer-events: none;
 		filter: blur(10px);
-		pointer-events: all;
-		opacity: 1;
 		transform: translateX(0);
-		filter: blur(0);
 	}
 
 	.arrowBtn {
@@ -99,13 +97,17 @@
 
 @media (max-width: 1024px) { 
 	.feedbacks {
+		p { 
+			font-size: 25px !important;
+		}
+
 		.arrowBtn {
 			top: 100%;
 		}
 	}	
 }
 
-@media (max-width: 430px) { 
+@media (max-width: 640px) { 
 	.feedbacks {
 		.arrowBtn {
 			top: 100%;

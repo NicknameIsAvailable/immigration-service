@@ -2,7 +2,7 @@ import Container from '@/app/components/container'
 import styles from './styles.module.scss'
 
 const AboutUs = ({ width }: { width: number | undefined }) => {
-	return width && width <= 430 ? (
+	return width && width <= 640 ? (
 		<div className={styles.aboutUs} id='about-us'>
 			<Container>
 				<div className={styles.info} id={styles.first}>

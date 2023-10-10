@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 import Logo from '../../../../public/icons/logo'
 import styles from './styles.module.scss'
 
-const Hello = () => {
+const Hello = ({width}: {width: number | undefined}) => {
 	const [offset, setOffset] = useState(0)
 
 	const handleScroll = () => {
@@ -38,13 +38,25 @@ const Hello = () => {
 									<p>+34 633 51 02 26</p>
 									<p>+34 685 54 27 31</p>
 									
+									{width && width <= 640 ? 
+									<a href='#footer'>
 									<div className={styles.whatsappIcon}/>
+									</a>
+									:
+									<div className={styles.whatsappIcon}/>
+									}
 								</div>
 								<a href='mailto:immigrationservice.spain@gmail.com' className={styles.mailLink}>
 									<p>
 										immigrationservice.spain@gmail.com
 									</p>
+									{width && width <= 640 ? 
+									<a href='#footer'>
 									<div className={styles.mailIcon}/>
+									</a>
+									:
+									<div className={styles.mailIcon}/>
+									}
 								</a>
 							</nav>
 						</header>
@@ -53,9 +65,7 @@ const Hello = () => {
 							<div className={styles.blur} />
 							<h1 className={styles.title}>Осуществите свою мечту о&nbsp;жизни в&nbsp;Испании</h1>
 							<p className={styles.heroText}>
-								Наша команда экспертов поможет вам сделать первый шаг
-								к&nbsp;новому захватывающему приключению и&nbsp;найти свое
-								счастье в&nbsp;этой удивительной стране!
+								Мы&nbsp;гарантируем получение положительного решения ВНЖ в&nbsp;Испании, конфиденциальность информации, внимательное отношение к&nbsp;каждому клиенту и&nbsp;оперативность в&nbsp;решении всех возникающих вопросов.
 							</p>
 						</div>
 

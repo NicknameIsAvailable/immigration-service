@@ -4,11 +4,10 @@
 	align-items: center;
 	z-index: 7;
 	position: fixed;
-	right: 5%;
+	right: 5vw;
 	bottom: 40px;
 	color: white;
 	background: #0b2c7f;
-	border: none;
 	border-radius: 100%;
 	width: 72px;
 	height: 72px;
@@ -44,8 +43,9 @@
 	}
 }
 
-@media (max-width: 430px) {
+@media (max-width: 640px) {
 	.floatingButton {
+		right: 5vw;
 		width: 48px;
 		height: 48px;
 	}

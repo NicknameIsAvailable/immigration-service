@@ -1,4 +1,5 @@
 .footer {
+	width: 100vw;
 	padding-top: 100px;
 	color: white;
 	border-top: 1px white solid;
@@ -74,6 +75,14 @@
 	}
 }
 
+@media (max-width: 1680px) {
+	.footer {
+		.link {
+			font-size: 17px;
+		}
+	}
+}
+
 @media (max-width: 1024px) {
 	.footer {
 		svg {
@@ -84,19 +93,19 @@
 		}
 
 		.phones {
-			justify-content: space-between;
+			gap: 20px;
 			flex: 1;
 			width: 100%;
 			display: flex;
 		}
 
 		p {
-			 font-size: 15px !important;
+			 font-size: 13px !important;
 		}
 	}
 }
 
-@media (max-width: 430px) {
+@media (max-width: 640px) {
 	.footer {
 		padding-top: 30px;
 
@@ -111,15 +120,7 @@
 	}
 
 	.phones {
-		gap: 20px;
-		width: 100%;
 		display: flex;
-	}
-
-	.smallText {
-		margin-left: auto;
-		margin-right: auto;
-		width: 90%;
 	}
 
 	.footerBlock { 

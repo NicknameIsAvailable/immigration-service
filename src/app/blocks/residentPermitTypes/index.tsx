@@ -8,19 +8,6 @@ import styles from './styles.module.scss'
 const ResidentPermitTypes = ({width}: {width: number | undefined}) => {
 	const [chosenPermit, setChosenPermit] = useState(0)
 
-	const [offset, setOffset] = useState(0)
-
-	const handleScroll = () => {
-		setOffset(window.pageYOffset)
-	}
-
-	useEffect(() => {
-		window.addEventListener('scroll', handleScroll)
-		return () => {
-			window.removeEventListener('scroll', handleScroll)
-		}
-	}, [])
-
 	interface ResidentPermitType {
 		name: string
 		description: any
@@ -88,7 +75,7 @@ const ResidentPermitTypes = ({width}: {width: number | undefined}) => {
 			),
 		},
 		{
-			name: 'Виза инфестора (Золотая виза)',
+			name: 'Виза инвестора (Золотая виза)',
 			description: (
 				<>
 					<p className='other'>
@@ -258,7 +245,7 @@ const ResidentPermitTypes = ({width}: {width: number | undefined}) => {
 					))}
 				</Container>
 			</div>
-			{width && width <= 430 
+			{width && width <= 640 
 			? <a href="#top">
 					<button className={styles.goUp}>
 						<Arrow/>

@@ -4,12 +4,11 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow-x: hidden;
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth !important;
 }
 

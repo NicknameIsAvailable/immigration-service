@@ -1,8 +1,12 @@
 @import '../../styles.module.scss';
 
+.servicesBlock {
+	width: 100vw;
+}
+
 .services {
 	position: relative;
-	border-radius: 35px 35px 0px 0px;
+	border-radius: 35px 35px 0 0;
 	padding-top: 35px;
 	padding-bottom: 120px;
 	z-index: 6;
@@ -22,7 +26,7 @@
 
 .nextSection {
 	background: #d58001;
-	border-radius: 35px 35px 0px 0px;
+	border-radius: 35px 35px 0 0;
 	width: 100%;
 	height: 35px;
 }
@@ -60,7 +64,7 @@
 	}
 }
 
-@media (max-width: 430px) {
+@media (max-width: 640px) {
 	.services {
 		padding-bottom: 35px;
 
